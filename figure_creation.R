@@ -86,15 +86,6 @@ create_mosaicplot() {
     geom_smooth(mapping = aes(x = DateCreated, y = domain_nums), color = "green", se = FALSE) +
     labs(title = "Without confidence intervals")
     }
-
-    get_domain_nums = function() {
-      store = c()  
-      for (i in 1:225) {
-        o = ifelse(gsrdata$Domain.Type[i] == "Public Code Repository", 1, 0)
-        store = append(store,o)
-      }
-      gsrdata$domain_nums = store
-    }
         
     combined_with_confidence = function() {
       ggplot(data = gsrdata) +
@@ -110,6 +101,7 @@ average_citations_yearly() {
   ggplot(data = gsrdata, mapping = aes(y = AverageCitations)) +
     geom_half_boxplot() +
     geom_half_dotplot() +
-    scale_y_log10()
+    scale_y_log10() +
+    labs(title = "Average Citations per Year, Logarithmic Scale")
 }
     

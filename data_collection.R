@@ -45,14 +45,19 @@ get_year = function() {
   }
 }
 
-get_domain_nums = function() {
-  store = c()  
+get_other_yearlies = function() {
+  dn = c()
+  ac = c()
   for (i in 1:225) {
     o = ifelse(gsrdata$Domain.Type[i] == "Public Code Repository", 1, 0)
-    store = append(store,o)
+    dn = append(dn,o)
+    u = ifelse(gsrdata$AverageCitations[i] < 1 | is.na(gsrdata$AverageCitations), 0, 1)
+    ac = append(ac, u)
   }
-  gsrdata$domain_nums = store
+  yearlies = data.frame(dn,ac)
+  return(yearlies)
 }
+yearlies = get_other_yearlies()
 
 get_lifespan() = function() {
   lifespan = as.numeric(gsrdata$DateUpdated)-as.numeric(gsrdata$DateCreated)
