@@ -1,6 +1,5 @@
 library(xml2)
 library(rvest)
-library(XML)
 
 data_path = "C:\\Users\\u251639\\Downloads\\Dated GSR Data.csv"
 prepare_data = function(path) {
@@ -15,28 +14,22 @@ gsrdata = prepare_data(data_path)
 #DateCreated and much of DateUpdated obtained through manual input
 #Description, Title, Sup, Doc, App, and Acc come from copying off the gsr webpage
 
-#Collects all package links from main GSR package 
-#webpage: https://surveillance.cancer.gov/genetic-simulation-resources/packages/
-#Requires manual download of said webpage
-get_package_urls = function() {
-  text_html = read_html("C:\\Users\\u251639\\Documents\\Data\\Browse and Search.htm")
+#Downloads many pages, will take a while
+get_pmc_urls = function() {
+  download.file("https://surveillance.cancer.gov/genetic-simulation-resources/packages/","~\\Browse and Search.htm")
+  text_html = read_html("~\\Browse and Search.htm")
   html_raw = html_elements(text_html, ".profile-link")
   url_raw = html_attr(html_raw,"href")
-}
-
-#For every package, the package page is downloaded (unlike other webpages, eg. Wikipedia
-#I couldn't get the get the link unless the page was downloaded). Then, the PMC link is scraped
-get_pmc_urls = function() {
-pmcurls = c()
-for (i in 1:225) {
-  print(i)
-  path = paste("C:\\Users\\u251639\\Documents\\Data\\WebpageTemp",i,".htm",sep = "")
-  download_html(url_raw[i],path)
-  dlpage = read_html(path)
-  htmldig = dlpage %>% html_elements("a") %>% html_attr("href")
-  pmc = htmldig[substring(htmldig,nchar(htmldig)-11,nchar(htmldig)) == "?tool=pubmed"]
-  pmcurls = append(pmcurls,pmc[2])
-}
+    pmcurls = c()
+  for (i in 1:225) {
+    print(i)
+    path = paste("~\\WebpageTemp",i,".htm",sep = "")
+    download_html(url_raw[i],path)
+    dlpage = read_html(path)
+    htmldig = dlpage %>% html_elements("a") %>% html_attr("href")
+    pmc = htmldig[substring(htmldig,nchar(htmldig)-11,nchar(htmldig)) == "?tool=pubmed"]
+    pmcurls = append(pmcurls,pmc[2])
+  }
 }
 
 get_year = function() {
@@ -45,19 +38,45 @@ get_year = function() {
   }
 }
 
+factor_domains = function() {
+  DomainTypes = factor(gsrdata$Domain,
+                       levels = c("alfsim","au","bioconductor","bioinform","bioinformatics","bit",
+                                  "bitbucket","broadinstitute","case","chkuo","cibiv","cnsgenomics",
+                                  "davidebolo1993","duke","ebi","ed","fiu","free","github","gitlab","gmail",
+                                  "google","h-its","inra","katja-schiffers","kuleuven","mabs",
+                                  "messerlab","molpopgen","nih","noaa","openabm","ox","patrickmeirmans",
+                                  "pegase-biosciences","pitt","r-project","ritchielab","rosenberglab",
+                                  "sak042","sammeth","scrm","scti","seqan","sjtu","soken","sourceforge",
+                                  "splatche","stanford","tau","temple","ua","uchicago","ucl",
+                                  "uhnresearch","umass","umich","umkc","uni-bielefeld","uni-hohenheim",
+                                  "uni-tuebingen","unibe","unige","unil","unl","uoguelph","upenn",
+                                  "uvigo","vanderbilt","washington","yale","yana-safonova"),
+                       labels = c("Personal or Institutional","Personal or Institutional","Personal or Institutional","Public Code Repository","Public Code Repository","Public Code Repository",
+                                  "Public Code Repository","Personal or Institutional","Personal or Institutional","Personal or Institutional","Personal or Institutional","Personal or Institutional",
+                                  "Personal or Institutional","Personal or Institutional","Personal or Institutional","Personal or Institutional","Personal or Institutional","Personal or Institutional","Public Code Repository","Public Code Repository","Public Code Repository",
+                                  "Public Code Repository","Personal or Institutional","Personal or Institutional","Personal or Institutional","Personal or Institutional","Personal or Institutional",
+                                  "Personal or Institutional","Personal or Institutional","Personal or Institutional","Personal or Institutional","Public Code Repository","Personal or Institutional","Personal or Institutional",
+                                  "Personal or Institutional","Personal or Institutional","Public Code Repository","Personal or Institutional","Personal or Institutional",
+                                  "Personal or Institutional","Personal or Institutional","Public Code Repository","Personal or Institutional","Public Code Repository","Personal or Institutional","Personal or Institutional","Public Code Repository",
+                                  "Personal or Institutional","Personal or Institutional","Personal or Institutional","Personal or Institutional","Public Code Repository","Personal or Institutional","Personal or Institutional",
+                                  "Personal or Institutional","Personal or Institutional","Personal or Institutional","Personal or Institutional","Personal or Institutional","Personal or Institutional",
+                                  "Personal or Institutional","Personal or Institutional","Personal or Institutional","Personal or Institutional","Personal or Institutional","Personal or Institutional","Personal or Institutional",
+                                  "Personal or Institutional","Personal or Institutional","Personal or Institutional","Personal or Institutional","Personal or Institutional"))
+}
+
 get_other_yearlies = function() {
   dn = c()
   ac = c()
   for (i in 1:225) {
     o = ifelse(gsrdata$Domain.Type[i] == "Public Code Repository", 1, 0)
     dn = append(dn,o)
-    u = ifelse(gsrdata$AverageCitations[i] < 1 | is.na(gsrdata$AverageCitations), 0, 1)
+    b = gsrdata$AverageCitations[i] < 1 | is.na(gsrdata$AverageCitations[i])
+    u = ifelse(b, 0, 1)
     ac = append(ac, u)
   }
-  yearlies = data.frame(dn,ac)
+  yearlies = data.frame(domain_type = dn, average_citation = ac)
   return(yearlies)
 }
-yearlies = get_other_yearlies()
 
 get_lifespan() = function() {
   lifespan = as.numeric(gsrdata$DateUpdated)-as.numeric(gsrdata$DateCreated)

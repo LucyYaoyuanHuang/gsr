@@ -1,6 +1,8 @@
 library(ggplot2)
 library(gghalves)
 
+source("data_collection.R")
+
 data_path = "C:\\Users\\u251639\\Downloads\\Dated GSR Data.csv"
 prepare_data = function(path) {
   data = read.csv(path)
@@ -10,33 +12,6 @@ prepare_data = function(path) {
   return(data)
 }
 gsrdata = prepare_data(data_path)
-
-factor_domains = function() {
-  DomainTypes = factor(gsrdata$Domain,
-                       levels = c("alfsim","au","bioconductor","bioinform","bioinformatics","bit",
-                                  "bitbucket","broadinstitute","case","chkuo","cibiv","cnsgenomics",
-                                  "davidebolo1993","duke","ebi","ed","fiu","free","github","gitlab","gmail",
-                                  "google","h-its","inra","katja-schiffers","kuleuven","mabs",
-                                  "messerlab","molpopgen","nih","noaa","openabm","ox","patrickmeirmans",
-                                  "pegase-biosciences","pitt","r-project","ritchielab","rosenberglab",
-                                  "sak042","sammeth","scrm","scti","seqan","sjtu","soken","sourceforge",
-                                  "splatche","stanford","tau","temple","ua","uchicago","ucl",
-                                  "uhnresearch","umass","umich","umkc","uni-bielefeld","uni-hohenheim",
-                                  "uni-tuebingen","unibe","unige","unil","unl","uoguelph","upenn",
-                                  "uvigo","vanderbilt","washington","yale","yana-safonova"),
-                       labels = c("Personal or Institutional","Personal or Institutional","Personal or Institutional","Public Code Repository","Public Code Repository","Public Code Repository",
-                                  "Public Code Repository","Personal or Institutional","Personal or Institutional","Personal or Institutional","Personal or Institutional","Personal or Institutional",
-                                  "Personal or Institutional","Personal or Institutional","Personal or Institutional","Personal or Institutional","Personal or Institutional","Personal or Institutional","Public Code Repository","Public Code Repository","Public Code Repository",
-                                  "Public Code Repository","Personal or Institutional","Personal or Institutional","Personal or Institutional","Personal or Institutional","Personal or Institutional",
-                                  "Personal or Institutional","Personal or Institutional","Personal or Institutional","Personal or Institutional","Public Code Repository","Personal or Institutional","Personal or Institutional",
-                                  "Personal or Institutional","Personal or Institutional","Public Code Repository","Personal or Institutional","Personal or Institutional",
-                                  "Personal or Institutional","Personal or Institutional","Public Code Repository","Personal or Institutional","Public Code Repository","Personal or Institutional","Personal or Institutional","Public Code Repository",
-                                  "Personal or Institutional","Personal or Institutional","Personal or Institutional","Personal or Institutional","Public Code Repository","Personal or Institutional","Personal or Institutional",
-                                  "Personal or Institutional","Personal or Institutional","Personal or Institutional","Personal or Institutional","Personal or Institutional","Personal or Institutional",
-                                  "Personal or Institutional","Personal or Institutional","Personal or Institutional","Personal or Institutional","Personal or Institutional","Personal or Institutional","Personal or Institutional",
-                                  "Personal or Institutional","Personal or Institutional","Personal or Institutional","Personal or Institutional","Personal or Institutional"))
-}
-factor_domains()
 
 citations_over_time = function() {
   ggplot(data = gsrdata, mapping = aes(x= DateCreated, y = Citations)) +
@@ -60,44 +35,33 @@ citations_by_number_of_certifications = function() {
 }
 
 certifcations_pre_and_post_gsr = function () {
-  mfrow = par(1,2)
+  par(mfrow = c(1,2))
   gd = gsrdata$Checks[gsrdata$Year <= 2013]
   pie(table(gsrdata$Checks), main = "Certificates of All Packages")
-  pie(table(gd), main = "Certificates of All Packages last updated before the creation of the GSR")
-  mfrow = par(1,1)
+  pie(table(gd), main = "Certificates of All Packages last updated\nbefore the creation of the GSR")
+  par(mfrow = c(1,1))
 }
 
-#unused, not good for combining
-create_mosaicplot() {
-  #install.packages("ggmosaic")
-  library("ggmosaic")
-  gsrdata$Sup = factor(gsrdata$Sup, levels = c(1,0), labels = c("Yes","No"))
-  ggplot(data = gsrdata) +
-    geom_mosaic(mapping = aes(x = Year, fill = Sup), divider = mosaic())
+combined = function (with_pre, year, with_confidence) {
+  yearlies = get_other_yearlies()
+  gdata = if (with_pre) gsrdata else subset(gsrdata,gsrdata$Year >= year)
+  per_year = if (with_pre) yearlies else subset(yearlies,gsrdata$Year >= year)
+  colors = c("Support" = "#56B4E9", "Documentation" = "#D55E00", "Application" = "#E69F00", 
+              "Accessability" = "#F5C710", "Domain Type" = "#0072B2","Average\nCitations" = "#009E73")
+   ggplot(data = gdata, linewidth = 1.3) +
+    geom_smooth(mapping = aes(x = DateCreated, y = Sup, color = "Support"),se = with_confidence, linewidth = 1.3) +
+    geom_smooth(mapping = aes(x = DateCreated, y = Doc, color = "Documentation"),se = with_confidence, linewidth = 1.3) +
+    geom_smooth(mapping = aes(x = DateCreated, y = App, color = "Application"),se = with_confidence, linewidth = 1.3) +
+    geom_smooth(mapping = aes(x = DateCreated, y = Acc, color = "Accessability"),se = with_confidence, linewidth = 1.3) +
+    geom_smooth(mapping = aes(x = DateCreated, y = per_year$domain_type, color = "Domain Type")
+                ,se = with_confidence, linewidth = 1.3) +
+    geom_smooth(mapping = aes(x = DateCreated, y = per_year$average_citation, color = "Average\nCitations")
+                ,se = with_confidence, linewidth = 1.3) +
+    labs(title = "Attributes of Packages Over Time") +
+     scale_color_manual(values = colors)
 }
 
-#################Add Legends ASAP
-    combined_without_confidence = function () {
-  ggplot(data = gsrdata) +
-    geom_smooth(mapping = aes(x = DateCreated, y = Sup), color = "forestgreen",se = FALSE) +
-    geom_smooth(mapping = aes(x = DateCreated, y = Doc), color = "royalblue",se = FALSE) +
-    geom_smooth(mapping = aes(x = DateCreated, y = App), color = "orange", se = FALSE) +
-    geom_smooth(mapping = aes(x = DateCreated, y = Acc), color = "red", se = FALSE) +
-    geom_smooth(mapping = aes(x = DateCreated, y = domain_nums), color = "green", se = FALSE) +
-    labs(title = "Without confidence intervals")
-    }
-        
-    combined_with_confidence = function() {
-      ggplot(data = gsrdata) +
-        geom_smooth(mapping = aes(x = DateCreated, y = Sup)) +
-        geom_smooth(mapping = aes(x = DateCreated, y = Doc, color = "orange")) +
-        geom_smooth(mapping = aes(x = DateCreated, y = App, color = "red")) +
-        geom_smooth(mapping = aes(x = DateCreated, y = Acc, color = "pink")) + 
-        geom_smooth(mapping = aes(x = DateCreated, y = domain_nums), color = "green") +
-        labs(title = "Percent certifications over time")
-    }
-
-average_citations_yearly() {
+average_citations_yearly = function() {
   ggplot(data = gsrdata, mapping = aes(y = AverageCitations)) +
     geom_half_boxplot() +
     geom_half_dotplot() +
