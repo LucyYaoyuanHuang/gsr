@@ -21,6 +21,13 @@ citations_over_time = function() {
     scale_y_log10()
 }
 
+certificates_over_time = function() {
+  ggplot(data = gsrdata, mapping = aes(x= DateCreated, y = Checks)) +
+    geom_smooth(method = "loess", formula = y~x) +
+    geom_point() + 
+    labs(title = "Certificates over Time", x = "Date Created", y = "Number of Certificates")
+}
+
 citations_by_number_of_certifications = function() {
   ggplot(data = gsrdata, mapping = aes(x = factor(Checks), y = Citations, group = Checks)) + 
     geom_boxplot() +
@@ -48,7 +55,7 @@ combined = function (with_pre, year, with_confidence) {
   per_year = if (with_pre) yearlies else subset(yearlies,gsrdata$Year >= year)
   colors = c("Support" = "#56B4E9", "Documentation" = "#D55E00", "Application" = "#E69F00", 
               "Accessability" = "#F5C710", "Domain Type" = "#0072B2","Average\nCitations" = "#009E73")
-   ggplot(data = gdata, linewidth = 1.3) +
+   ggplot(data = gdata) +
     geom_smooth(mapping = aes(x = DateCreated, y = Sup, color = "Support"),se = with_confidence, linewidth = 1.3) +
     geom_smooth(mapping = aes(x = DateCreated, y = Doc, color = "Documentation"),se = with_confidence, linewidth = 1.3) +
     geom_smooth(mapping = aes(x = DateCreated, y = App, color = "Application"),se = with_confidence, linewidth = 1.3) +
@@ -57,7 +64,7 @@ combined = function (with_pre, year, with_confidence) {
                 se = with_confidence, linewidth = 1.3) +
     geom_smooth(mapping = aes(x = DateCreated, y = per_year$average_citation, color = "Average\nCitations"),
                 se = with_confidence, linewidth = 1.3) +
-    labs(title = "Attributes of Packages Over Time") +
+    labs(title = "Attributes of Packages Over Time", color = "Attribute") + xlab("Date Created") + ylab("Percent with attribute") +
      scale_color_manual(values = colors)
 }
 
@@ -86,4 +93,7 @@ lifepan_yearly = function() {
     geom_abline(slope = -1, intercept = 2023.6) +
     annotate("text", x = 2002.5, y = 24, size = 3,
              label = "<== Maximum possible lifespan,\naka years till present")
-}   
+}
+ggplot(data = gsrdata,mapping = aes(x = DateCreated, y = yearlies$domain_type)) +
+  geom_point() +
+  geom_smooth()

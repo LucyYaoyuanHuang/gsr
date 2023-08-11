@@ -5,16 +5,13 @@ data_path = "C:\\Users\\u251639\\Downloads\\Dated GSR Data.csv"
 prepare_data = function(path) {
   data = read.csv(path)
   data$Domain.Type = factor(data$Domain.Type)
-  data$DateCreated = as.Date(data$DateCreated)
-  data$DateUpdated = as.Date(data$DateUpdated)
+  data$DateCreated = as.Date(data$DateCreated, "%m/%d/%Y")
+  data$DateUpdated = as.Date(data$DateUpdated, "%m/%d/%Y")
   return(data)
 }
 gsrdata = prepare_data(data_path)
 
-#DateCreated and much of DateUpdated obtained through manual input
-#Description, Title, Sup, Doc, App, and Acc come from copying off the gsr webpage
-
-#Downloads many pages, will take a while
+# Downloads many pages, will take a while
 get_pmc_urls = function() {
   download.file("https://surveillance.cancer.gov/genetic-simulation-resources/packages/","~\\Browse and Search.htm")
   text_html = read_html("~\\Browse and Search.htm")
@@ -88,4 +85,9 @@ get_average_citations = function() {
   current_date = as.Date("2023-8-7")
   years_extant = as.numeric((current_date - gsrdata$DateCreated)/365)
   gsrdata$AverageCitations = gsrdata$Citations/years_extant
+}
+
+get_need_application_reevaulation = function() {
+  test = subset(gsrdata, gsrdata$App == 0 & gsrdata$AverageCitations >1)
+  write.csv(test,"C:\\Users\\u251639\\Downloads\\Application_Candidates.csv")
 }
