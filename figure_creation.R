@@ -7,8 +7,8 @@ data_path = "C:\\Users\\u251639\\Downloads\\Dated GSR Data.csv"
 prepare_data = function(path) {
   data = read.csv(path)
   data$Domain.Type = factor(data$Domain.Type)
-  data$DateCreated = as.Date(data$DateCreated)
-  data$DateUpdated = as.Date(data$DateUpdated)
+  data$DateCreated = as.Date(data$DateCreated, "%m/%d/%Y")
+  data$DateUpdated = as.Date(data$DateUpdated, "%m/%d/%Y")
   return(data)
 }
 gsrdata = prepare_data(data_path)
@@ -53,19 +53,37 @@ combined = function (with_pre, year, with_confidence) {
     geom_smooth(mapping = aes(x = DateCreated, y = Doc, color = "Documentation"),se = with_confidence, linewidth = 1.3) +
     geom_smooth(mapping = aes(x = DateCreated, y = App, color = "Application"),se = with_confidence, linewidth = 1.3) +
     geom_smooth(mapping = aes(x = DateCreated, y = Acc, color = "Accessability"),se = with_confidence, linewidth = 1.3) +
-    geom_smooth(mapping = aes(x = DateCreated, y = per_year$domain_type, color = "Domain Type")
-                ,se = with_confidence, linewidth = 1.3) +
-    geom_smooth(mapping = aes(x = DateCreated, y = per_year$average_citation, color = "Average\nCitations")
-                ,se = with_confidence, linewidth = 1.3) +
+    geom_smooth(mapping = aes(x = DateCreated, y = per_year$domain_type, color = "Domain Type"),
+                se = with_confidence, linewidth = 1.3) +
+    geom_smooth(mapping = aes(x = DateCreated, y = per_year$average_citation, color = "Average\nCitations"),
+                se = with_confidence, linewidth = 1.3) +
     labs(title = "Attributes of Packages Over Time") +
      scale_color_manual(values = colors)
 }
 
-average_citations_yearly = function() {
+average_citations_distribution = function() {
   ggplot(data = gsrdata, mapping = aes(y = AverageCitations)) +
     geom_half_boxplot() +
     geom_half_dotplot() +
     scale_y_log10() +
     labs(title = "Average Citations per Year, Logarithmic Scale")
 }
-    
+
+lifespan_distribution = function() {
+  ggplot(data = gsrdata, mapping = aes(y = Lifespan)) +
+    geom_half_boxplot() +
+    geom_half_dotplot() +
+    labs(title = "Support Length") +
+    annotate("text",label="Vortex, c. 1993", x = 0.09, y = 27.6) +
+    annotate("text",label="FastSlink, c. 1989", x = .1, y = 21.4) +
+    annotate("text",label="Bottlesim, c. 2003", x = .1, y = 16.5) +
+    annotate("text",label="Median: 2 years 7 months", x = -0.2, y = 6 )
+}
+
+lifepan_yearly = function() {
+  ggplot(data = gsrdata, mapping = aes(x = Year, y = Lifespan, group = Year)) +
+    geom_boxplot() + 
+    geom_abline(slope = -1, intercept = 2023.6) +
+    annotate("text", x = 2002.5, y = 24, size = 3,
+             label = "<== Maximum possible lifespan,\naka years till present")
+}   
