@@ -30,7 +30,7 @@ certificates_over_time = function() {
 
 citations_by_number_of_certifications = function() {
   ggplot(data = gsrdata, mapping = aes(x = factor(Checks), y = Citations, group = Checks)) + 
-    geom_boxplot() +
+    geom_boxplot(ou) +
     labs(x = "Number of Certifications", y = "Citations, logarithmic scale", title = "Citations by Number of Certifications") +
     scale_y_continuous(trans = "log10") +
     annotate("text", label = "ms", x = 3, y = 1400, size = 3.4) +
@@ -79,7 +79,7 @@ average_citations_distribution = function() {
 lifespan_distribution = function() {
   ggplot(data = gsrdata, mapping = aes(y = Lifespan)) +
     geom_half_boxplot() +
-    geom_half_dotplot() +
+    geom_half_dotplot(binwidth = 1) +
     labs(title = "Support Length") +
     annotate("text",label="Vortex, c. 1993", x = 0.09, y = 27.6) +
     annotate("text",label="FastSlink, c. 1989", x = .1, y = 21.4) +
@@ -94,6 +94,40 @@ lifepan_yearly = function() {
     annotate("text", x = 2002.5, y = 24, size = 3,
              label = "<== Maximum possible lifespan,\naka years till present")
 }
-ggplot(data = gsrdata,mapping = aes(x = DateCreated, y = yearlies$domain_type)) +
-  geom_point() +
-  geom_smooth()
+
+average_citations_by_number_of_certifications = function() {
+  ggplot(data = gsrdata, mapping = aes(x = factor(Checks), y = AverageCitations, group = Checks)) + 
+    geom_half_boxplot(outlier.shape = NA) +
+    geom_half_point() +
+    scale_y_log10() +
+    labs(x = "Number of Certifications", y = "Average Citations, logarithmic scale", 
+         title = "Average Citations by Number of Certifications") + 
+    annotate("text",x = 1, y = 4, label = "Median: 1.405648") +
+    annotate("text",x = 5, y = 65, label = "Median: 3.840268")
+}
+
+average_citations_over_time = function() {
+  ggplot(data = gsrdata, mapping = aes(x= DateCreated, y = test)) +
+    geom_smooth(method = "loess", formula = y~x) +
+    geom_point() + 
+    labs(title = "Average Citations over Time", x = "Date Created", y = "Average Number of Citations")
+}
+
+lifespan_by_number_of_certifications = function() {
+  ggplot(data = gsrdata, mapping = aes(x = factor(Checks), y = Lifespan, group = Checks)) + 
+    geom_half_boxplot(outlier.shape = NA) +
+    geom_half_point() +
+        labs(x = "Number of Certifications", y = "Lifespan, years", 
+         title = "Lifespan by Number of Certifications") + 
+    annotate("text",x = 1, y = 4, label = "Median: 0.02465753") +
+    annotate("text",x = 5, y = 14, label = "Median: 5.024658")
+}
+lifespan_over_time = function() {
+  test = as.numeric(as.Date("2023-8-7"))/365.25
+  m = -1/365
+  ggplot(data = gsrdata, mapping = aes(x= DateCreated, y = Lifespan)) +
+    geom_abline(slope = m, intercept = test) +
+    geom_smooth(method = "loess", formula = y~x) +
+    geom_point() +
+    labs(title = "Lifespan over Time", x = "Date Created", y = "Lifespan, years")
+}
