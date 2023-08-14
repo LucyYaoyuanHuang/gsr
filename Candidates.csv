@@ -1,0 +1,1697 @@
+DateCreated,Title,Citations,AverageCitations,Decision,APPLICATION...COMMENTS.FROM.PANEL,Simulation.Package.Name,X3.1..Published.in.peer.reviewed.journals..The.publication.does.not.have.to.focus.on.the.simulator..but.should.describe.the.simulation.method.and.applications.clearly.,Comments..7,X3.2..List.typical.applications.in.the..Applications..tab.of.the.GSR.entry.of.the.simulator..The.author.needs.to.identify.typical.application.s..of.the.simulator.and.list.publications.that.use.the.simulator.on.GSR..The.publications.listed.should.use.the.simulator.to.simulate.data..Publications.that.only.mention.the.software.packages..e.g..in.a.discussion.section.or.review.article..should.not.be.included.because.these.publications.do.not.reflect.use.of.the.package..or.an.application.,Comments..8,X3.3..Used.and.cited.by.at.least.5.external.users.in.the.past.5.years..or.twice.in.the.past.year..as.demonstrated.by.citations.listed.in.the.Applications.tab..External.users.refer.to.people.or.researchers.who.are.not.one.of.the.package.authors.or.directly.affiliated.with.the.authors.,Comments..9,X3.4..OVERALL.CERTIFICATION.FOR.APPLICATION..1,Initial.Reviewer.Overall.Comments.,Review.Committee.Overall.Comments.,FINAL.DECISION
+10/6/2011,454sim,14,1.182049503,Review,454sim is not published,454sim,No,454sim is not published,No,454sim is not published,No,454sim is not published,NO,"454sim  is very old and has not been published or used
+
+Accessibility: yes
+documentation: no
+application: no
+support: no",,
+6/8/2021,AdmixSim2,1,0.554711246,New,,,,,,,,,,,,
+12/1/2014,Aladyn,4,0.433105903,X,"There is currently no known applications of Aladyn by users other than its authors.
+
+LM - I was able to find this publication for Aladyn (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4330972/). This could be a primary citation for Aladyn, and they say the other article was created with this tool.  However, I agree that overall, we should not approve application.
+
+MR: Agree with Leah, PMC4330972 should be the primary citation for Aladyn. Overall I would no grant the Application certification.",Aladyn,No,"Aladyn is suspected to be used in ""Limited evolutionary rescue under habitat heterogeneity"" by Schiffers K, Bourne E, Lavergne S, Thuiller W and Travis JMJ (2013) (http://rstb.royalsocietypublishing.org/content/royptb/368/1610/20120083.full.pdf) but the paper does not mention the name Aladyn.
+
+MR: I'd say yes, based on the paper ""ALADYN – a spatially explicit, allelic model for simulating adaptive dynamics"" by Katja H Schiffers, Justin MJ Travis Ecography (Cop.) 2014 Dec 1; 37(12): 1288–1291. doi: 10.1111/ecog.00680 PMCID: PMC4330972",No,The authors have not listed applications of Aladyn in GSR or the software homepage.,No,There is currently no known citation for Aladyn.,NO,Aladyn is a typical example of software packages written for particular research topics. It was made available to others with minimal documentation and support.,"I agree with the assessment from Bo.  The author seems not interested in maintaining the package.   It certainly does not meet the majority of the criteria for certification. 
+
+LM - I agree.  If the authors can point us to more information and update their documentation, we could re-consider.
+
+MR: Yes to Accessibility and Documentation; No to Application and Support. Hard to say overall since I'm split by half for the 4 criteria.","Accessibility – Y
+Documentation – we decided Y and to ask that they put the readme on the main page.
+Application – N
+Support – N
+(final -10/18/16)"
+12/8/2011,ALF,70,6.164053076,Review,"We cannot certify ALF for application due to a lack of example applications, which should be easy to fix.
+
+LM - agree, only issue with ALF is that it is missing the GSR info.",ALF,Yes,"ALF was published in peer-reviewed journal, Mol Biol Evol.
+The publication of ALF described the simulation method and applications clearly.",No,No example publication using ALF has been provided in the “Applications” tab of the GSR entry of the simulator.,Yes,ALF was used and cited by at least 5 external users in the past 5 years.,NO,ALF is with many users and applications but we could not identify any license information. ,"The link to the package is not working.    
+
+LM - it appears that we would only award Documentation and say No to accessibility (no license info), Application (no GSR info) and Support (need info about how users get notified.)",
+8/6/2012,Ana-FiTS,7,0.648312611,Review,Ana-FITS was not published,Ana-FITS,No,Ana-FITS was not published,No,No application is listed on Ana-FITS's GSR page,No,Ana-FITS was not cited,NO,"Accessibility: yes, on github, GPL license
+Documentation: Yes
+Application: Not published
+Support: No issue raised since 2012
+","MR: Accessibility, Documentation",
+6/15/2015,ARGON,13,1.594957983,Review,"Applications of ARGON was not listed.
+",ARGON,Yes,"ARGON is published
+",No,"Applications of ARGON is not listed under GSR.
+",Yes,"ARGON has been cited 10 times according to PMC but it is unclear if they are applications.
+",NO,"ARGON is decent but not popular. It was supported a few years ago but support status is unclear now
+","Accessibility: yes
+Documentation: yes
+Application: No
+Support: yes
+
+HSC:  
+No attribute/details in GSR
+Accessibility: yes
+Documentation: yes 
+Application: No 
+Support:  Maybe
+
+MR: Yes to Accessibility, Documentation and Support. No to Applications (potential yes)",
+1/1/2009,Bayesian Serial SimCoal,61,2.67801299,Review,"The applications tab of the GSR entry of Bayesian Serial SimCoal needs to be updated.
+LM - agree",Bayesian Serial SimCoal,Yes,"Bayesian Serial SimCoal was published in peer-reviewed journal, J Hered.
+The publication of Bayesian Serial SimCoal described the simulation method and applications clearly.",No,No example publication using Bayesian Serial SimCoal has been provided in the “Applications” tab of the GSR entry of the simulator.,Yes,"Bayesian Serial SimCoal was used and cited by at least 5 external users in the past 5 years.
+",NO,"Bayesian Serial SimCoal could be fully certified with the addition of sample applications and license and support information.
+","HSC -- agree with the initial reviewers' assessment. 
+LM - ok - certify for documentation but not others",
+4/27/2014,BaySICS,1,0.107701387,X,"BayCICS is started to get used but it needs to update its GSR entry.
+
+MR: No to application; only 3 citations, none reported in GSR.",BaySICS,Yes,"BaySICS was published in peer-reviewed journal, PLoS One.
+The publication described the simulation method and applications clearly.",No,No example publication using BaySICS has been provided in the “Applications” tab of the GSR entry of the simulator.,Yes,BaySICS have been used twice in 2017 according to https://www.scopus.com/results/citedbyresults.uri?sort=plf-f&cite=2-s2.0-84901431095&src=s&imp=t&sid=13b4199c0853da59119e3c20e295b545&sot=cite&sdt=a&sl=0&origin=inward&editSaveSearch=&txGid=57c0811bb170293a55a76cc5747c36e9 ,NO,"BaySICS is a well-maintained package and has the potential to be fully certified if the authors respond to our request to add citations, fixing the link to documentation at homepage and fix its GSR entry.
+
+","MR: Ok to accessibility conditional on adding license info. OK to documentation conditional on fixing link from homepage.  No to application; only 3 citations, none reported in GSR.  MR: No to support - we could ask about that as have done for other packages.
+",
+9/15/2011,BEERS,187,15.71247698,Review,"BEERS are widely used but its GSR entry needs to be updated with applications.
+
+LM - agree.",BEERS,Yes,"BEERS was published in peer-reviewed journal, Bioinformatics.
+The publication described the simulation method and applications clearly.",No,No example publication using BEERS has been provided in the “Applications” tab of the GSR entry of the simulator.,Yes,BEERS is used and cited by at least 5 external users in the past 5 years.,NO,"Although it is lack of the evidences of response to user inquiries and support for users can be found, BEERS is a well-maintained package and has the potential to be fully certified if the authors respond to our request to add the information of license, applications, and support.
+","Maybe Documentation - but no to ac, Ap and Support.",
+12/1/2018,bmsim,12,2.561403509,Review,BMSIM is not published and not cited.,BMSIM,No,BMSim is not published in peer-reviewed journal,No,There is no citation for BMSIM listed under GSR,No,There is no citation,NO,"The author released BMSIM on github and never took care of it, and the tool is not published or cited.","Accessibility: yes (on github)
+Documentation: borderline but no, not detailed enough
+Application: not published, not cited
+Support: with an issue tracker but the author did not respond to users' questions
+
+MR: Yes only to Accessibility.
+
+HSC:  Accessibility: Yes.   All others: No.  Also lacks details in GSR website",
+10/9/2003,BottleSim,107,5.39284728,Review,"BOTTLESIM has been actively used but it lacks list of applications in its GSR entry.
+LM - agree",BottleSim,Yes,"BottleSim was published in peer-reviewed journal, Molecular Ecology Notes.
+The publication described the simulation method and applications clearly.",No,No example publication using BottleSim has been provided in the “Applications” tab of the GSR entry of the simulator.,Yes,BottleSim is used and cited by at least 5 external users in the past 5 years.,NO,"BOTTLESIM has been actively used (cited by 57 articles according to CrossRef). Although it is not actively maintained, it could be certified for accessibility, documentation, and applications if the authors could update its GSR entry.","HSC-- Agree with the initial reviewer's overall comments.
+LM - I think we give acc and doc - I would consider support...",
+9/19/2014,CAMISIM,65,8.217873225,Review,Need citaitons for CAMISIM but we could add. ,CAMISIM,Yes,CAMISIM is published in peer-reviewed journals,No,CAMISIM  lacks listed applications on GSR,Yes,CAMISIM has 27 citations,NO,CAMISIM is decent and widely used,"accessibility: yes
+documentation: yes
+application: need citation list
+documentation: yes
+
+HSC-
+Yes to all except Application
+
+MR: Yes to Accessibility; Yes to Documentation; No to Application (not enough citations); Yes to Support.",
+3/28/2019,CAMPAREE,1,0.233226837,X,CAMPAREE does not have a decent application.,CAMPAREE,Yes,CAMPAREE is published in a peer-reviewed journal.,No,No citations are listed under the applications tab of CAMPAREE’s GSR entry.,No,CAMPAREE has only been cited once in the past year.,NO,"Accessibility: yes
+Documentation: yes
+Application: no (CAMPAREE has only been cited once in the past year)
+Support: yes (CAMPAREE has a decent issue tracker)","Agree.
+
+MR: Yes to all but Application (no citations)",
+5/25/2016,CancerInSilico,1,0.13878327,X,CancerInSilico is too new to have any citation,CancerInSilico,Yes,CancerInSilico is published in a peer-reviewed journal.,No,CancerInSilico does not have enough citations.,No,CancerInSilico does not have enough citations.,NO,"Accessibility: yes
+Documentation: yes
+Application: no
+Support: yes (no issue raised)","This is a standard bioconductor package, it is too new to have any issue or citation, but otherwise decent.
+
+HSC: Agree with initial review.   Also, the website ""Detail"" tab is empty
+
+https://surveillance.cancer.gov/genetic-simulation-resources/packages/cancerinsilico/#tab-detailed 
+
+MR: ok
+",
+11/13/2012,CASS,7,0.651952029,Review,"CDPOP appears to be used and cited by the research community although no citations are listed in its GSR entries.
+
+LM - only item missing is the GSR entry being updated.",CDPOP,Yes,"CDPOP was published in peer-reviewed journal, Genetics.
+The publication described the simulation method and applications clearly.",No,No example publication using CDPOP has been provided in the “Applications” tab of the GSR entry of the simulator.,Yes,CDPOP is used and cited by at least 5 external users in the past 5 years.,NO,"Although the homepage of CDPOP is outdated, CDPOP is a well-maintained package and has the potential to be fully certified if the authors respond to our request to provide the information of license.
+","HSC- The link does not work.  Not easy to install. 
+LM - I think we should give this package documentation and support; Application if they update the GSR entry and Accessibility if the installers can be found?",Fully certified after responded.
+2/27/2018,CellCoal,8,1.469552089,Review,CellCoal has one likely application,CellCoal,Yes,CellCoal is published in a peer reviewed journal,No,No applications listed for CellCoal,No,"CellCoal has 5 citations, 1 likely application",NO,"accessibility: no license
+documentation: ok
+application: no, only one application
+support: ok","agreed. BP
+
+HSC:
+accessibility: no 
+documentation: yes
+application: no
+support: Not sure?
+
+MR: No Accessibility (lack license); Yes Documentation; No Application (no citations); Yes Support (some issues should be marked as close since the author responded).
+",
+9/17/2014,Clotho,0,0,X,Clotho was not published or cited,Clotho,No,Clotho was not published,No,No application was listed for Clotho,No,Clotho was not cited,NO,"Accessibility: yes, on github, Apache license
+Documentation: No, in ods format, cannot view
+Application: No. 
+Support: No. One ticket responded in 2015
+",MR: Accessibility,
+2/24/2014,Coala,10,1.057664445,Review,,,,,,,,,,,,
+4/18/2016,cophesim,1,0.136857893,X,"cophesim was not cited frequent enough,",cophesim,Yes,,No,Applications of cophesim is not listed,No,cophesim was only cited once in the past few years according to PMC,NO,"cophesim is on bitbucket but is not used (cited), and there is no evidence of support.","Accessibility: no license, easy to fix
+Documentation: yes
+Application: not listed, and no citation either
+Support: issue track not accessible.
+
+HSC: 
+Accessibility: General Notes -- All software is published under the MIT license.
+Documentation: yes
+Application: No
+Support: Maybe
+
+MR: No to Accessibility (lacks license); Yes to Documentation; No to Application; No to Support.",
+11/12/2019,CoreSimul,6,1.605571848,Review,Lacking list of citations for CoreSimul,CoreSimul,Yes,CoreSimul was published in a peer-reviewed journal,No,No application was listed.,Yes,"CoreSimul was cited three times in 2020, not sure if they are applicaiton though.",NO,"CoreSimul is a decent package, on github. ","Accessibility: lack license
+Documentation: yes
+Application: lack list
+Support: yes (but no ticket)
+
+HSC:  
+Accessibility: No
+Documentation: Yes
+Application: No
+Support:  No 
+
+MR: No to Accessibility (no license); Yes to Documentation; No to Application (potential yes if added to tab); Yes to Support (empty issue tracker).
+",
+11/20/2018,cscGAN,42,8.907611854,Review,scGAN does not have a sufficient application.,cscGAN,Yes,scGAN is published in a peer-reviewed journal.,No,No citations are listed under the applications tab of scGAN’s GSR entry.”.,Yes,scGAN has been cited over 5 times in the past 5 years.,NO,"Accessibility: yes
+Documentation: yes
+Application: no
+Support: yes","scGAN/cscGAN is a high quality simulator for scSeq data and actively maintained. It has been cited 32 times. However, I could not locate a single article that uses the simulator for some applications. All articles discussed simulation method, neural network, potential application etc.
+
+MR: Yes to Accessibility. Yes to Documentation. Maybe to Application (5 cit in past 5 years). Yes to Support.
+
+HSC- Not sure about Application.  Yes to all  others",
+4/5/2014,CuReSim,42,4.494283201,Review,"CuReSim has been actively used by others although its GSR entry does not list any application.
+
+LM - just need to update the application tab.",CuReSim,Yes,CuReSim  is published in BMC Bioinformatics.,No,No application is listed at the applications tab of the GSR entry of CuReSim .,Yes,CuReSim has been cited more than 20 times in the past few years.,NO,"CuReSim has been actively used. Although it is not open source, it could be certified for documentation and applications if the authors are willing to work with us to update its GSR entry.","LM - I would consider yes to Documentation and no to Ac, App and Support.  Though Application could be easily fixed.",
+4/1/2009,DAWG,68,4.735737455,Review,"DAWG has been cited and used, but the applications are not listed on GSR.",DAWG,Yes,"DAWG was published in peer-reviewed journal, Bioinformatics.
+The publication described the simulation method and applications clearly.",No,No example publication using DAWG has been provided in the “Applications” tab of the GSR entry of the simulator.,Yes,DAWG is used and cited by at least 5 external users in the past 5 years.,NO,DAWG is a well-maintained package and the author has been supportive. I assume that the author could add some sample applications to get fully certified.,"DAWG is reasonably maintained for a 10+ year old package. It could be fully supported if the authors is willing to update its GSR entry and add more information about its documentation.
+
+Accessibility: yes
+Documentation: needs work
+Application: needs work
+Support: yes
+
+MR: Yes to Accessibility, Documentation (we could easily fix GSR), and Support. No to Application.",
+12/3/2015,DHOEM,0,0,X,DHOEM was not cited,DHOEM,No,DHOEM was published in peer-review journal,No,No application is listed for DHOEM,No,DHOEM was not cited,NO,"Accessibility: no, on sourceforge, no license is found
+Documentation: No
+Application: No, Not cited. 
+Support: No issue tracker
+",,
+4/29/2016,discoal,34,4.672439759,Review,No applications are listed for discoal,discoal,Yes,discoal has been published,No,Applicaitons of discoal was not listed,Yes,discoal has been cited 19 times,NO,discoal is a well maintained coalescent simulator,"Accessibility: yes
+Documentation: yes
+Application: usual no
+Support: yes
+
+HSC-  No to Application, Yes to others.   No details in GSR
+
+MR: Yes to Accessibility, Documentation and Support. No to Application (potential yes).",
+8/14/2011,DWGSIM,0,NA,X,"DWGSIM is not published.
+
+LM - agree.",DWGSIM,No,DWGSIM does not seem to be published in any peer-reviewed journal (the authors could clarify).,No,The authors could list applications in the GSR entry of DWGSIM.,No,DWGSIM seems to be widely used but there is no way for it to be cited.,NO,"DWGSIM is a typical open source project. It is not published perhaps because it was forked from Li Heng's WGSIM. We could award accessibility, support and documentation if the author is willing to update the GSR entry, although he has stated in the homepage that only limited support will be provided to the software.","HSC- 
+   - Yes to ""Accessibility"" 
+   - ""Documentation""  is quite complete. Should be a ""Yes"" if the author updates on GSR.
+   - No to ""Application""
+   -Yes to ""Support:
+LM -
+Yes to Acessibility and Support; No to application; not sure about documentation.",
+8/29/2014,EAGLE,0,0,X,EAGLE is not cited,EAGLE,No,EAGLE is not published,No,No applications listed on GSR website for EAGLE,No,EAGLE was not cited,NO,"Accessibility: yes, on github, BSD license
+Documentation: Yes
+Application: No. 
+Support: Yes, there are closed issues in 2019
+","MR: Accessibility, Documentation, Support",
+4/11/2012,EggLib,64,5.649334946,Review,"Need additional info about typical applications but this can be easily fixed by author of the eggLib.
+
+MR: agree",EggLib,Yes,"EggLib was published in peer-reviewed journal, BMC Genet.
+The publication described the simulation method and applications clearly.",No,No example publication using EggLib has been provided in the “Applications” tab of the GSR entry of the simulator.,Yes,EggLib is used and cited by at least 5 external users in the past 5 years.,NO,"Although it is lack of the evidences of response to user inquiries and support for users can be found, EggLib is a well-maintained package and has the potential to be fully certified if the authors respond to our request to add more sample application.
+","HSC- I agree with the initial reviewer
+
+MR: agree. Yes to accessibility and documentation. Support and application should be easy to fix.",
+9/17/2011,EpiSIM,38,3.19438047,Review,"There is no evidence that EpiSIM has been cited, but the authors might be able to add some citations. In any case the GSR entry is incomplete.",EpiSIM,Yes,"EpiSIM was published in peer-reviewed journal, Genes & Genomics.
+The publication described the simulation method and applications clearly.",No,No example publication using EpiSIM has been provided in the “Applications” tab of the GSR entry of the simulator.,No,No information about EpiSIM being used and cited can be found.,NO,"EpiSIM seems to be abandoned as well because there is no evidence of support, application, or update since it was released.
+","I believe EpiSIM has been abandoned but the authors might respond and add at least a license.
+
+HSC- 
+Accessibility --  Yes, except license information
+Documentation -- Yes.  
+Application - No
+Support - No
+
+MR: No to accessibility because of missing license; Yes to Documentation; No to Application; No to Support.",
+8/8/2006,EvolSimulator,21,1.234697165,Review,EvolSimulator has not been actively cited but the authors might be able to provide a list of citations.,EvolSimulator,Yes,"EvolSimulator was published in peer-reviewed journal, Bioinformatics. The publication described the simulation method and applications clearly.",No,No example publication using EvolSimulator has been provided in the “Applications” tab of the GSR entry of the simulator.,No,EvolSimulator is not used and cited by at least 5 external users in the past 5 years. Some of the recent citations are from other simulators.,NO,"Although it is lack of the evidences of response to user inquiries and support for users can be found, EvolSimulator was well documented and is still accessible after 12 years.","EvolSimulator does not seem to be used and maintained, but it is still accessible and well documented. I doubt the authors would respond to our communication and try to get other two certificates though.
+
+HSC:   Agree with Bo. 
+
+           Accessibility: Yes
+           Documentation: Yes
+           Application: No
+           Support: No
+
+MR: same as BP and HSC.",
+4/1/2008,EvolveAGene,26,1.692829112,Review,EvolveAGene has been cited 21 times but the real application can be a lot less. The authors should add applications to the entry.,EvolveAGene,Yes,"EvolveAGene was published in peer-reviewed journal, Mol Biol Evol.
+The publication described the simulation method and applications clearly.
+",No,"No example publication using EvolveAGene has been provided in the “Applications” tab of the GSR entry of the simulator.
+",Yes,EvolveAGene is used and cited by at least 5 external users in the past 5 years.,NO,"Although it is lack of the evidences of response to user inquiries and support for users can be found, EvolveAGene is a well-maintained package and has the potential to be fully certified if the authors respond to our request to add citations, information of license and sample applications.
+","EvolveAGene appears to be abandoned because there is no recent development, and there is no ticket although there is a ticket tracker. It could be certified for accessibility, documentation, and application if the author is willing to help.
+
+HSC- there are many citations for this package.  The most recent one is 2019 May. Seems to be a useful package. 
+
+MR: No to accessibility because of missing license; Yes to Documentation; Maybe to Application; No to Support.",
+7/16/2014,FASTQSim,17,1.875188879,Review,FASTQSim lacks citations in GSR entry,FASTQSim,Yes,FASTQSim is published in a peer reviewed journal,No,Applications of FASTQSim is not listed,Yes,FASTQSim has been cited 12 times since its publication,NO,"It is almost unfair to other github-hosted packages since FASTQSim is hosted at sourceforge and is very difficult to nevigate, but the essential pieces are there.","Accessibility: barely
+Documentation: barely
+Citation: the usual no
+Support: barely
+
+HSC-
+
+Accessibility: Yes
+Documentation: Yes
+Citation: No 
+Support: Yes
+
+MR: Yes to Accessibility, Documentation and Support (although nobody is asking questions). No but possible to Application.
+",
+5/1/2011,fastsimcoal,154,12.54407498,Review,,,,,,,,,,,,
+12/15/2012,FFPopSim,25,2.347568819,Review,"HSC-- for 3.2) typical applications in the “Applications” tab of the GSR entry of the simulator,    there is no example.    However, this can be easily fixable because this package is cited by 7 external users in their applications.    
+
+MR -- Should easily get a Yes by identifying some applications among the 10 citing articles. 
+
+LM - agree with Melissa.  This would be a ""no"" until this was updated.",FFPopSim,Yes,"Published in peer-reviewed journal, Bioinformatics, which can be found at https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3519462/
+The publication described the simulation method and applications clearly.",No,No example publication using FFPopSim has been provided in the “Applications” tab of the GSR entry of the simulator.,Yes,"FFPopSim is Cited by 7 external users in the past 4 years, which can be found at https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3519462/citedby/",NO,FFPopSim is a well-maintained package and the author has been supportive. I assume that the author could add some citations and publicize method of support to get fully certified.,"HSC --  I agree with the initial reviewer's overall comments. 
+MR -- Yes for Accessibility and Documentation; No (easy to turn to Yes) for Application; No (possibly Yes if authors make changes) for Support. 
+LM -- Yes for Acc and Doc, No for App and Support.",
+5/19/2014,FIGG,4,0.433620434,X,"FIGG was not used and cited at all, perhaps because it is too much trouble to set up hadoop for this simple simulator.
+
+MR - No to application.",FIGG,Yes,"FIGG was published in peer-reviewed journal, BMC Bioinformatics.
+The publication of FIGG described the simulation method and applications clearly.",No,No example publication using FIGG has been provided in the “Applications” tab of the GSR entry of the simulator.,No,"FIGG was not cited at all according to PMC.
+
+HC comment:
+
+cited by 3 according to google scholar:
+
+[1] TwoPaCo: An efficient algorithm to build the compacted de Bruijn graph from many complete genomes
+I Minkin, S Pham, P Medvedev - Bioinformatics, 2016 - academic.oup.com 
+
+[2] Data-intensive computing infrastructure systems for unmodified biological data analysis pipelines
+LA Bongo, E Pedersen, M Ernstsen - International Meeting on …, 2014 - Springer
+
+[3] A Data Management Model For Large-Scale Bioinformatics Analysis
+E Pedersen - 2017 - munin.uit.no
+",NO,FIGG is not actively used and lacks application and support. We could award access and documentation although the latter also needs work.,"BP - Agree with Man Chong. FIGG has failed to attract users and will likely disappear in a few years.
+
+MR - Yes to Accessibility and Documentation. No to Application and Support.
+
+HC - Agree.   Yes to  access and documentation  only.   There are some citations,  but not clear what kind of applications. ",
+6/18/2013,forqs,17,1.676121016,Review,"HSC-  There are a few applications but none is  provided in the “Applications” tab of the GSR entry of the simulator.
+
+LM - I think this is a ""No"".  Looking at PubMedCentral, only 3 of these papers appear to be actual applications (the remaining are reviews or software packages).
+
+MR -- Yes to Application if the authors can provide evidence (3 examples seems enough to me).",forqs,Yes,"forqs was published in peer-reviewed journal, Bioinformatics, which can be found at https://academic.oup.com/bioinformatics/article/30/4/576/204337/forqs-forward-in-time-simulation-of-recombination
+The publication described the simulation method and applications clearly.",No,No example publication using forqs has been provided in the “Applications” tab of the GSR entry of the simulator.,Yes,"forqs was cited by 7 external users in the past 5 years which can be found at https://www.ncbi.nlm.nih.gov/pubmed?linkname=pubmed_pubmed_citedin&from_uid=24336146 . It is currently unclear how many of the 7 citations are actual applications so we will review this when the citations are added to the applications tab of GSR.
+",NO,forqs is a high quality software and we should work with the author to get it fully certified.,"HSC-  I agree with the initial review, except ""DOCUMENTATION"". 
+LM - I think we should say ""Yes"" to access, ""Yes"" to Documentation, ""No"" to Application and ""No"" to support, with time to address these.
+MR -- agree with Leah.",10/2/17 - not clear - disagreement on application and support
+10/20/2009,FPG,0,NA,X,"HSC- No information at all. 
+
+MR: pubmed search returns no results. Through Google identified this ""Hey J. FPG: A computer program for forward population genetics simulation. 2004."" but could not retrieve. And the citing publication were: PMC2851118, PMC2147962.
+
+LM - no for applications (pubs from Melissa are reviews)",FPG,No,There are no informations of publication of FPG can be found in GSR or package homepage.,No,No example publication using FPG has been provided in the “Applications” tab of the GSR entry of the simulator.,No,There are no informations of publication of FPG can be found in GSR or package homepage.,NO,"FPG is a well-maintained package. However, there are no evidences of the author being supportive, no informations of the license, and no information of citations and publication. We could contact the authors to check if they are willing to provide these informations to us.","HSC -  The website is not accessible on 9/13/2017. I don't know if it is temporarily or permanently.  Will revisit again to check out. 
+
+MR: ok to accessibility, pending license info; ok to documentation; no to application, unless Hey 2004 is made accessible and authors documents the required applications; no to support.
+
+LM:  I would give accessibility and documentation; No to support and Application.",
+5/1/2019,FreeHi-C,4,0.936497755,X,FreeHi-C has only one likely application,FreeHi-C,Yes,FreeHi-C is published in a  peer reviewed journal,No,No applications have been listed for FreeHi-C,No,"FreeHi-C has 3 citations, 1 likely application from 2021",NO,"accessibility:  ok
+documentation: ok
+application: FreeHi-C has only 1 application
+support: authors have not responded to any issues since 2019","For support: the author forked the repo to its lab but has been answering questions from his own repo (https://github.com/yezhengSTAT/FreeHiC/issues). So support certificate can be awarded. BP 
+
+HSC- agree with BP
+MR - agree all but application",
+8/1/2008,FREGENE,37,2.462618527,Review,,,,,,,,,,,,
+1/16/2014,fwdpp,30,3.137535817,X,"fwdpp is quite complex and low level, which explains why it has not been cited frequently.
+LM - agree, I only could find the 2 applications mentioned by the author plus 1 more. ",fwdpp,Yes,"fwdpp was published in peer-reviewed journal, BMC Bioinformatics.
+The publication of fwdpp described the simulation method and applications clearly.",Yes,There are typical applications of fwdpp in the “Applications” tab of the GSR entry of the simulator.,No,"fwdpp is Cited by 2 external users in the past year according to PMC (2016, and 2017), but the latest citation is from the author.",NO,fwdpp is a well-maintained package and the author has been supportive. I assume that the author could complete the information at GSR entry to get fully certified.,"I mostly agree with the initial review on fwdpp but the number of citations is not enough to justify a certificate in applications.
+LM - Yes to Accessibility and Support; No to Documentation and Applications.  There are not enough applications.
+
+",
+7/21/2018,G2P,3,0.594139989,X,G2P has no applications listed under GSR.,G2P,Yes,G2P is published,No,No citations has been added for G2P,No,G2P has been cited twice according to PMC but may have other citations.,NO,G2P is not open source and has not been widely used.,"Accessibility: no license
+Documentation: yes
+Application: no
+Support: yes
+
+HSC-  Yes to Documentation and Support
+
+MR: No to Accessibility (lacks license); Yes to Documentation; No to Application; No to Support (issues are open and don't see any attempt to address them).
+        
+",
+10/1/2012,GAMETES,54,4.974760222,Review,"GEMETES has been cited (31 according to PMC) but the GSR website is not updated.
+
+LM - I agree, just need to update the GSR website.",GAMETES,Yes,"GAMETES was published in peer-reviewed journal, BioData Min.
+The publication described the simulation method and applications clearly.",No,"No example publication using GAMETES has been provided in the “Applications” tab of the GSR entry of the simulator.
+",Yes,GAMETES is used and cited by at least 5 external users in the past 5 years.,NO,"GAMETES has not been updated for five years, the homepage is inaccessible, and there is no evidence of support. It is however being used and cited and Dr. Jason Moore might be able to find another student to maintain it and update the GSR entry.
+","LM - it doesn't look like this software has been updated in 5 years.  It is being used alot and cited.  The documentation does suggest people should reach Jason Moore for this software, so he would be the person to contact.  I would give this Accessibility and Documentation and No to Support and Applications (asking Jason to update the page).
+MR: Yes to Accessibility and Documentation. Maybe to Applications, pending update of the GSR applications tab. No to Support.   Note: I considered as homepage for this software ""https://sourceforge.net/projects/gametes/"" and not the link under the support page ""http://epistasis.org/software/"" which points to GitHub where gametes is not even listed among this group's software.  ",
+3/30/2011,GARLIC,15,1.213161977,X,GARLIC has not been applied and cited often enough to be certified,GARLIC,Yes,GARLIC is published in a peer-review journal,No,No applications of GARLIC are listed under its GSR entry,No,GARLIC has not been cited frequent enough,NO,"accessibility: yes
+documentation: borderline yes
+application: no (very few citations are real applications)
+support: yes (no ticket)","HSC:  Yes to all except Application. 
+MR: ok",
+7/30/2003,GASP,25,1.24777793,X,"GASP has been used mostly by its authors and we could not find any recent citation for it.
+LM - agree.  this is an older program and may not be useful for current applications.",GASP,Yes,"GASP was published in peer-reviewed journal, Molecular Simulation.
+The publication described the simulation method and applications clearly.
+",Yes,"The author listed about 10 citations (up to 2006) to GASP in their manual. The GSR moderator has entered it.
+",No,"Cannot find any information about GASP being used and cited by at least 5 external users in the past 5 years.
+
+MR: the main publication is not on Molecular Simulation but on AJHG and is listed under ""Public Domain Notice and Reference"": Wilson, A.F., Bailey-Wilson, J.E., Pugh, E.W., Sorant, A.J.M. 1996. The Genometric Analysis Simulation Program (G.A.S.P.): a software tool for testing and investigating methods in statistical genetics. Am J Hum Genet. 59:A193.
+",NO,GASP is an old package that has not been used recently. It could be certified for documentation with its extensive documentation.,"LM - I think we should give this package documentation.  We would say no to accessibility due to lack of available source code, no to support due to lack of evidence of support, and no to application because there were no current publications listed.  I can't find the original publication for this software tool.
+
+MR: Yes to Documentation.  No to accessibility due to lack of source code and (perhaps consequent) difficulty of installation.  No to support due to lack of evidence. No to Application due to last published use being dated 2006.
+PS: the original publication is listed under ""Public Domain Notice and Reference"". Also the ""Citations"" GSR entry looks incomplete.",
+1/7/2011,GCTA,3103,246.484222,Review,GCTA has a long list of citations but it is unclear which publication uses the (small) simulation feature of it. The authors would need to add relevant citations to the applications tab.,GCTA,Yes,"GCTA was published in peer-reviewed journal, Am J Hum Genet.
+The publication described the simulation method and applications clearly.
+",No,"No example publication using GCTA has been provided in the “Applications” tab of the GSR entry of the simulator.
+",Yes,"GCTA is used and cited by at least 5 external users in the past 5 years.
+",NO,"GCTA is a well-maintained package and has the potential to be fully certified if the authors respond to our request to add sample applications. Also, the authors are very supportive.","I agree with the initial review that the only missing part would be citations to the applications tab for GCTA to be fully certified.
+
+MR: Yes to Accessibility. Yes to Documentation. No to Application (need to add to the GSR tab, they show 11 on their website). Unclear re Support: they have a FAQ specific to GCTA and a forum for all their software, the GCTA page direct users to email contact regarding issues rather than using forum. Additional notes: the GSR entry is outdated compared to how up to date their webpage is. 
+
+LM - Yes to Accessibility, Documentation & Support.  For Support the website seems to have questions but also there is a separate forum.",
+9/27/2011,GemSIM,79,6.656278855,Review,There is a decent number of citations for this article but it is unclear which ones actually used GemSIM as most of them are from similar tools. There is no applications listed under GSR.,GemSIM,Yes,"GemSIM was published in peer-reviewed journal, BMC Genomics.
+The publication described the simulation method and applications clearly.
+",No,"No example publication using GemSIM has been provided in the “Applications” tab of the GSR entry of the simulator.
+",Yes,GemSIM is used and cited by at least 5 external users in the past 5 years.,NO,"GemSIM has not been touched since 2012 and I suspect that it has been abandoned by the author. It is however still accessible and decently documented.
+
+MR: the last update is dated 2014.","GemSIM is one of the earlier read simulator. It has been cited by pretty much all later read simulators but not sure if it was actually used. This package is not being maintained.
+
+MR: yes to Accessibility and Documentation. No to Application and Support. 
+
+LM:  After download, the information has enough about accessibility and documentation.  No to application and support.",
+3/6/2016,GeneEvolve,6,0.808118081,X,GeneEvolve does not have enough citations.,Geneevolve,Yes,GeneEvolve is published in a peer-reviewed journal.,No,No citations are listed under the applications tab of XXX’s GSR entry.,No,GeneEvolve is cited 4 times since 2017.,NO,"Accessibility: yes
+Documentation: yes
+Application: no
+Support: yes",,
+4/6/2021,GENLIB,5,2.13950762,New,GENLIB is new and has not been cited frequent enough,GENLIB,Yes,GENLIB has been published in peer-review journals,Yes,GENLIB lists applications under GSR,No,GENLIB has only been really used once in the past two years,NO,"GENLIB is a well-maintained R package added to GSR by its author.
+
+Accessibility: yes
+Documentation: yes
+application: no (four citations in the past year, with 1 application)
+Support: no (1 ticket not responded for a few weeks)
+
+The ticket is one month old, so we probably still can certify for support.","HSC- No support. Yes to Accessibility, Documentation
+
+MR: these seem to be all borderline, but ok with yes to all except application.",
+6/15/2007,GENOME,65,4.023232152,Review,"GENOME is widely used but more recent citations are needed in the applications tab of its GSR entry.
+
+MR - No to application for now. The author should be able to easily update the GSR application tab to include updated citations and obtain this certification. 
+
+LM - agree, with updates to the webpage.",GENOME,Yes,"GENOME was published in peer-reviewed journal, Bioinformatics.
+The publication described the simulation method and applications clearly.
+",No,The applications tab of the GSR entry of GENOME lists 2 typical applications in 2013 but more recent citations are required.,Yes,"GENOME is used and cited by at least 5 external users in the past 5 years.
+",NO,GENOME is well documented and has been widely used. It could be fully certified if the authors can update its  GSR entry with recent citations and update its website with support information.,"MR - Yes to accessibility and documentation. No to application and support. This package could easily be awarded application by adding some of their citations to the application tab and support by making publicly available support history through mailing list archives and/or forum posts.
+
+Agree with MR.",
+4/30/2008,GenomePop2,30,1.963421194,Review,"The GSR entry for GenomePop2 needs to be updated with citation information.
+
+MR - No to Application. It should be possible for GenomePop2 to receive application certificate by updating the GSR application tab.
+LM - agree.
+
+",GenomePop2,Yes,"GenomePop2 was published in peer-reviewed journal, BMC Bioinformatics.
+The publication described the simulation method and applications clearly.
+",No,"No example publication using GenomePop2 has been provided in the “Applications” tab of the GSR entry of the simulator.
+",Yes,"GenomePop2 is used and cited by at least 5 external users in the past 5 years.
+",NO,"GenomePop2, as stated in its website, is not actively maintained. It is still available under windows, has decent documentation and could be certified for documentation, and applications if the authors can update the application list in its GSR entry.","MR - Yes to documentation. No to accessibility, application and support. Missing piece for accessibility: source code.
+Missing piece for application: adding some of their citations to the application tab.
+Missing piece for support: making publicly available support history through mailing list archives and/or forum posts.
+Note: I was confused by the sentence on top of the documentation ""GENOMEPOP2 HAS BEEN AVAILABLE SINCE 2008 AND NOW IS NOT LONGER MAINTAINED"" since they recently released version 2.7.7.1 on September, 2017.
+
+No to accessibility, application and support.",
+1/1/2008,GenomeSimla,29,1.857995436,Review,There is no application information for genomeSIMLA,GenomeSimla,Yes,"GenomeSimla was published in peer-reviewed journal, EvoBIO: European Conference on Evolutionary Computation, Machine Learning and Data Mining in Bioinformatics.
+The publication described the simulation method and applications clearly.
+",Yes,"There is an example publication using GenomeSimla has been provided in the “Applications” tab of the GSR entry of the simulator.
+",No,"Cannot find any information about GenomeSimla being used and cited by at least 5 external users in the past 5 years.
+",NO,"Although it is lack of the evidences of response to user inquiries and support for users can be found, GenomeSimla is a well-maintained package and has the potential to be fully certified if the authors respond to our request to add more citations and the information of license.
+","Bo: There is no license, no downloadable source code, no application list, and no evidence of support, but all could change if Dr. Ritchie is willing to change how she manages her applications.
+
+MR: No to Accessibility because of the requirement to enter your email (although, do we really want to be so strict about that?). Yes to Documentation (although the GSR entry is outdated). No to Application (example publication using GenomeSimla are provided in the “Applications” tab but the last are from 2013 and I could not reproduce those or other citations). No to Support (no evidence).
+
+HSC:  Yes to Documentation.   Application list needs update.",
+2/2/2014,Genomic Variant Simulator,2853,299.8401958,Review,"""A general framework for estimating the relative pathogenicity of human genetic variants"" by Kircher & Witten et al.",Genomic Variant Simulator (related to CADD),Yes,"""A general framework for estimating the relative pathogenicity of human genetic variants""
+by Kircher & Witten et al.",No,There is no listed citations for GV Simulator,No,"CADD Simulator is not cited separately but the authors might know better - should check Genomic Variant Simulator ""A general framework for estimating the relative pathogenicity of human genetic variants"" by Kircher & Witten et al.",NO,"Supplementary scripts, not a dedicated simulator","Accessibility: yes, it is accessible and usable.
+Documentation: inadequate
+Application: not published or cited
+Support: no evidence of support
+
+HSC-
+
+Accessibility: yes
+Documentation: Seems to have lots of details. Look OK to me
+Application: No
+Support: There is contact info.  
+
+MR: Yes to Accessibility and Documentation. No to Application (but should check the GVS paper). No to Support.",
+7/29/2009,GENS2,8,0.570089809,X,"GENS2 has not been actively used and cited, at least not evident from GSR applications tab.",GENS2,Yes,"GENS2 was published in peer-reviewed journal, BMC Bioinformatics.
+The publication described the simulation method and applications clearly.
+",No,"No example publication using GENS2 has been provided in the “Applications” tab of the GSR entry of the simulator.
+",No,"GENS2 is not used and cited by at least 5 external users in the past 5 years.
+",NO,"GENS2 is accessible but not well documented and maintained but it could be certified for documentation if the authors make the documentation available.
+","GENS2 was published in 2012 and was updated in 2017, but its website is a mess, with no documentation and there is no evidence of support. 
+
+MR: Yes to Accessibility. Yes to Documentation (it is a short README file but all components seem to be there; GSR entry is 2.2 instead of latest 2.3.1). No to Application (need to be documented). No to Support (no evidence).
+
+HSC: Accessibility: YES;   Documentation: Yes;   Application: No; Support: No",
+10/11/2019,Geonomics,3,0.784383954,X,,,,,,,,,,,,
+2/5/2015,GPOPSIM,7,0.822866345,X,,,,,,,,,,,,
+9/20/2016,GppFst,4,0.581210191,X,"PMC shows only 1 citation for GppFst after its publication in 2017. The authors could know about its applications though.
+
+LM - agree.  I was able to find 3 in google scholar.",GppFst,Yes,"GppFst was published in peer-reviewed journal, Bioinformatics.
+The publication described the simulation method and applications clearly.
+",No,"No example publication using GppFst has been provided in the “Applications” tab of the GSR entry of the simulator.
+",No,"Cannot find any information about GppFst being used and cited by at least 5 external users in the past 5 years.
+",NO,"Although GppFst is a new package and it is lack of the evidences of response to user inquiries and support for users can be found, GppFst is a well-maintained package and has the potential to be fully certified if the authors respond to our request to add sample applications, citations and the description at GSR.
+","Bo: accessibility is ok, documentation needs discussion because the documentation is good, but GSR entry is clearly outdated. Application is lacking, and support can be certified by our recent change of rules.
+
+HSC:  Accessibility: yes
+          Documentation: yes
+          Application: no
+          Support: yes
+
+LM:  I am confused about Bo's comment about change of rules.  I would say yes to accessiblity and documentation and no to application and support.  Since they have an issue tracker, we give OK to support.
+",
+1/24/2008,GS,26,1.672541417,Review,GS was insufficiently cited,GS,Yes,GS has been published in 2008,No,GS has no listed application,No,GS was cited by 26 articles but not enough applications,NO,"Accessibility: no, no resource code (only binary, code available upon request, no license) 
+Documentation: No
+Application: No. (Only 34977040, 2021, added)
+Support: No, no issue tracker
+",MR: -,
+1/1/2008,GWAsimulator,42,2.690889942,Review,"The authors would need to add citations to GSR entry of GWAsimulator.
+LM - agree",GWAsimulator,Yes,"GWAsimulator was published in peer-reviewed journal, Bioinformatics.
+The publication described the simulation method and applications clearly.
+",No,"No example publication using GWAsimulator has been provided in the “Applications” tab of the GSR entry of the simulator.
+",Yes,GWAsimulator is used and cited by at least 5 external users in the past 5 years.,NO,"Although it is lack of the evidences of response to user inquiries and support for users can be found, GWAsimulator is a well-maintained package and has the potential to be fully certified if the authors respond to our request to add sample applications and information of license.
+","Bo: Currently GWAsimulator is only qualified for documentation, but license and applications list can be easily fixed if the authors are willing to make the changes. 
+
+LM - I agree, Yes to Doc, Yes to Ac, No to Applications and Support.  Need to discuss license.
+
+MR: No Accessibility (license available but not compliant); Yes Documentation; Yes? Application (if we add the 5 examples ourselves?); No Support (no evidence or way to check)",
+11/8/2010,HAPGEN,139,10.8990333,Review,HAPGEN has been cited but its GSR entry needs to be updated.,HAPGEN,Yes,"HAPGEN was published in peer-reviewed journal, Bioinformatics.
+The publication described the simulation method and applications clearly.
+",No,"No example publication using HAPGEN has been provided in the “Applications” tab of the GSR entry of the simulator.
+",Yes,HAPGEN is used and cited by at least 5 external users in the past 5 years.,NO,"Although it is lack of the evidences of response to user inquiries, and the source code cannot be found, HAPGEN is a well-maintained package and has the potential to be fully certified if the authors respond to our request to add sample applications and provide the source code.
+","HAPGEN is well documented and widely used, but it is not open source (at least source code is not available), and there is no evidence of support. So Accessibility no, documentation yes, application, after author (or moderator) adds applications, support, no.
+
+HSC-  
+Accessibility: An associated R package is open source
+Documentation: Yes
+Application: Only needs updating the GSR tab
+Support: No
+
+LM - 
+Accessibility - need to discuss issue with source code.  
+Documentation - Yes
+Application - just needs GSR tab update
+Support - I would actually say Yes, to discuss.",
+1/1/2010,HaploSIm,4,0.293999195,X,HaploSim is not well cited,HaploSim,Yes,HaploSim was published,No,There was no listed applications for HaploSim,Yes,HaploSim is not well cited,NO,"Accessibility: yes, on CRAN
+Documentation: yes
+Application: No. 
+Support: No
+","MR: Accessibility, Documentation",
+1/1/2007,HAP-SAMPLE,30,1.806334543,Review,,,,,,,,,,,,
+12/1/2005,HapSim,31,1.75209043,Review,HapSim is still widely used but the GSR entry does not reflect this.,HapSim,Yes,"HapSim was published in peer-reviewed journal, Bioinformatics.
+The publication described the simulation method and applications clearly.
+",No,"No example publication using HapSim has been provided in the “Applications” tab of the GSR entry of the simulator.
+",Yes,HapSim is used and cited by at least 5 external users in the past 5 years.,NO,"Although it is lack of the evidences of response to user inquiries and support for users can be found, HapSim is a well-maintained package and has the potential to be fully certified if the authors respond to our request to add sample applications.
+","HapSim is a standard R package for simulation and is still used by the community, as evident by the new ""reverse citation"" of sim1000G. The latest version was released in 2017 so the authors should still be actively maintaining this package. It could be certified for Applications and perhaps also support if the author is responsive.
+
+MR: Yes to Accessibility and Documentation. No to Support (the CRAN page is mirrored in GitHub, so they you use that to show support in the future). Maybe to Application (the only missing piece is populating the Application tab in GSR, we ask them to do it first and go back and do it ourselves if they don't answer?).",
+3/19/2008,HAPSIMU,4,0.25983271,X,HAPSIMU has  only a few citations and only one of them appear to have used HAPSIMU. ,HAPSIMU,Yes,"HAPSIMU was published in peer-reviewed journal, BMC Bioinformatics.
+The publication described the simulation method and applications clearly.
+",No,"No example publication using HAPSIMU has been provided in the “Applications” tab of the GSR entry of the simulator.
+",No,"HAPSIMU is not used and cited by at least 5 external users in the past 5 years.
+",NO,"HAPSIMU is an old package. There are just a few of citations of it, and it is lack of information of license and simple application. I suggest that we can contact the authors to see if they are willing to add these informations and provide the source code.","HAPSIMU has not bee used in the community and has not been maintained for quite a while. We could certify it for documentation since its documentation is rather complete.
+
+LM - I would give it documentation.  No to accessibility (no license info, no source code availability; limited webpage); no to applications, no to support.  The thing to discuss is that the license info and contact info can be found in the publication.  but doesn't really change the decision.
+
+HSC -  I download the software and run an example on my PC.  It did not work!
+The program seems to have some bugs.    A window popped up saying:
+""Debug Assertion Failed! 
+...
+Expression: str != NULL 
+...
+(Press retry to debug..)""
+
+and then it stop working.
+
+Since it is not maintained, should we take it off GSR?
+
+",
+1/1/2009,IBDsim,14,0.958544363,Review,IBDsim is decently used in the community as shown by the number of citations. The author should add applications to the tab.,IBDsim,Yes,"IBDsim was published in peer-reviewed journal, Mol Ecol Resour.
+The publication described the simulation method and applications clearly.
+",No,"No example publication using IBDsim has been provided in the “Applications” tab of the GSR entry of the simulator.
+",No,The pubmed center lists 25 citations for IBDsim so it is likely that IDBsim is used by the community.,NO,"Although it is lack of the evidences of response to user inquiries, IBDsim is a well-maintained package and could be certified for accessibility, documentation, applications (if citations are added).","MR: Yes to Accessibility and Documentation. No to Support. Maybe to Application (the only missing piece is populating the Application tab in GSR, he actually lists 5 in his webpage - we ask him to do it first and go back and copy those 5 to the Application tab ourselves if he doesn't do it?).",
+5/25/2015,IgSimulator,18,2.192923899,Review,IgSimulator was not well cited.,IgSimulator,Yes,IgSimulator was published,No,No application is listed under GSR for IgSimulator,No,IgSimulator was not well cited,NO,"Accessibility: no, on github, no license
+Documentation: Yes, very simple online documentation but has a manual.html that is downloadable.
+Application: No. 
+Support: No. ticket never replied
+",,
+8/1/2009,Indelible,183,13.04844696,Review,"Indelible has been cited more than 100 times and have been used actively, but there is no applications registered at GSR.
+
+LM - I think we give them a chance to address this one.",Indelible,Yes,"Indelible was published in peer-reviewed journal, Mol Biol Evol.
+The publication described the simulation method and applications clearly.
+",No,"No example publication using Indelible has been provided in the “Applications” tab of the GSR entry of the simulator.
+",Yes,"Indelible is used and cited by at least 5 external users in the past 5 years.
+",NO,"Although it is lack of the evidences of response to user inquiries and support for users can be found, Indelible is a well-maintained package and has the potential to be fully certified if the authors respond to our request to add sample applications.
+","Bo: Indelible is accessible, although require registration, is well documented, widely used (no GSR entry), and has a ticket tracker (no history). Need to discuss how to assign certificates.
+
+
+HSC:  
+         Accessibility: Yes
+         Documentation: Yes
+         Application: Need to add example application in GSR entry
+         Support:  Cannot tell if there is any response.
+
+LM - I agree with HSC.  Yes to Acc and Doc.
+           ",
+3/1/2007,indel-Seq-Gen,19,1.155255705,Review,"indel-Seq-Gen has been cited 14 times, once since 2015. ",indel-Seq-Gen,Yes,"indel-Seq-Gen was published in peer-reviewed journal, Mol Biol Evol.
+The publication described the simulation method and applications clearly.
+",No,"No example publication using indel-Seq-Gen has been provided in the “Applications” tab of the GSR entry of the simulator.
+",Yes,"indel-Seq-Gen is used and cited least 5 external users in the past 5 years.
+",NO,"indel-Seq-Gen has a ten year old package that is still accessible and well documented, but it is not actively used or supported.","BP: Yes for accessibility and documentation, no for application and support. The package was still used once for application in 2019, showing the value of ""old"" software though. 
+
+MR: Yes to Accessibility and Documentation; No to Application and Support.
+
+HSC:  Accessibility: Yes
+           Documentation: Yes
+           Application:  No
+           Support: No",
+5/17/2017,InSilicoSeq,50,8.029036516,Review,Lacks applications for InSilicoSeq listed on GSR>,InSilicoSeq,Yes,InSilicoSeq has been published.,No,Applications of InSilicoSeq are not listed.,Yes,InSilicoSeq has been cited more than 23 times and could be certified for applicaitons.,NO,"InSilicoSeq is relatively new, well maintained. It could be fully certified if the author could add applications to GSR>","Accessibility: yes
+Documentation: yes
+Applications: usual no
+Support: yes although the author did not respond to our request.
+
+HSC-   No to Applications and Yes to all others
+
+MR (4/15/2021): Yes to Accessibility; Yes to Documentation (although some concrete examples could be added); Yes to Application if the citations are added to GSR; Yes to Support.",
+10/18/2007,invertFREGENE,9,0.569126819,X,"invertFREGENE has been cited 7 times according to PMC, so it is possible for it to be certified if the authors can update the applications page.",invertFREGENE,Yes,"invertFREGENE was published in peer-reviewed journal, Bioinformatics.
+The publication described the simulation method and applications clearly.
+",No,"No example publication using invertFREGENE has been provided in the “Applications” tab of the GSR entry of the simulator.
+",Yes,"invertFREGENE is not used and cited by 5 external users in the past 5 years.
+",NO,"invertFREGENE was written by the same author of FREGENE. We have evaluated FREGENE and sent its author an email, but got no response. I suspect that this software is also abandoned but we can certify it for accessibility and documentation since it is accessible and has decent documentation.","HSC:  Accessibility and Documentation:  YES
+           Application: No
+           Support: No
+
+LM:  Accessibility and Documentation: Yes; No to Application and Support.  This is an older package.  I had some question about accessibility since you need to download the package and unzip it before you can find the license information.
+",
+2/4/2022,J-SPACE,1,0.664845173,New,There are no citations and no applications for J-SPACE,J-SPACE,Yes,J-SPACE is published in a peer reviewed journal ,No,No applications have been listed for J-SPACE,No,There are no citations and no applications for J-SPACE,NO,"accessibility: ok
+documentation: ok
+application: no; no citations or applications
+support: ok; no issues have yet been raised by the users of J-SPACE, but last commit was in 2022 ","Agreed.
+
+MR: Yes to all but App (too new)",
+1/22/2007,kernalPop,15,0.906306903,X,,kernalPop,Yes,"kernalPop was published in peer-reviewed journal, Molecular Ecology Notes.
+The publication described the simulation method and applications clearly.
+",No,"No example publication using kernalPop has been provided in the “Applications” tab of the GSR entry of the simulator.
+",Yes,"kernalPop is used and cited by at least 5 external users in the past 5 years.
+",NO,"kernalPop is a well-maintained package and has the potential to be fully certified if the authors respond to our request to add sample applications.
+",kernelPop is no longer available and cannot be certified. This is shown at https://cran.r-project.org/web/packages/kernelPop/index.html and is confirmed by trying to install it from R.,
+4/18/2016,LongISLND,9,1.231721035,Review,LongISLND has not enough applications yet.,LongISLND,Yes,LongISLND has been published in peer-reviewed journals.,No,No application is listed under GSR for LongISLND,Yes,"LongISLND has been cited 7 times, not sure how many are applications",NO,LongISLND is a decent package.,"Accessibility: yes
+Documentation: yes
+Application: No
+Support : yes
+
+HSC-
+
+Accessibility: yes
+Documentation: yes
+Application: No
+Support : No or Maybe
+
+MR: Yes to Accessibility; Yes to Documentation; No to Application (not enough citations); Yes to Support.",
+2/27/2021,LSH-GAN,0,0,New,LSH-GAN does not have any citation,LSH-GAN,Yes,LSH-GAN has been published in peer-review journal,No,No application is listed under the applications tab of LSH-GAN,No,LSH-GAN has not been cited,NO,LSH-GAN is not well documented and maintained.,"Accessibility: no license
+Documentation: not clear and long enough
+Application: no citation
+Support: yes (no ticket)
+
+HSC- agree.  No to all
+
+MR: No to Accessibility (no license); No to Documentation; No to Application; Yes to Support. ",
+1/1/2011,Marlin,1,0.07933058,X,Marlin has not bee used (with only one citation),Marlin,Yes,"Marlin was published in peer-reviewed journal, Mol Ecol Resour.
+The publication described the simulation method and applications clearly.
+",No,"No example publication using Marlin has been provided in the “Applications” tab of the GSR entry of the simulator.
+",No,"Marlin is not used and cited by at least 5 external users in the past 5 years.
+",NO,"Marlin is a decent program that is accessible and well documented, but it has not been used by others.","Marlin is accessible (although not hosted on github etc), well documented, but not used, and there is lack of evidence for support.
+
+HSC-  
+Accessibility:   Yes
+Documentation: Yes
+Application:  Only need to add to the GSR page
+Support: No inquiries, so there are no responses.  Otherwise, it looked well maintained.  
+
+MR: Yes to Accessibility and Documentation; No to Application (not enough citations even if were to be added to GSR) and Support (perhaps fixable).
+",
+6/1/2010,Mason,212,16.07061267,Review,There is no evidence of applications for Mason.,Mason,Yes,"Mason was published in a Technical Report FU Berlin (which might not be peer-reviewed). The publication described the simulation method and applications clearly.
+",No,"No example publication using Mason has been provided in the “Applications” tab of the GSR entry of the simulator.
+",No,Mason is published as a tech report and it is not sure how many time it has been cited. The authors might be able to list some citations.,NO,"The authors of Mason are being supportive and Mason is a well-maintained package and has the potential to be fully certified if the authors respond to our request to add sample applications.
+","HSC-  
+Accessibility:   Yes
+Documentation: Yes
+Application:  This software itself is a technical report, not a peer-reviewed journal.  Cannot find any application that uses this software. 
+Support:  Seemed to be well maintained. Last update was in 2018.   
+
+MR: Yes to Accessibility, Documentation and Support; No to Application.",
+10/1/2018,MaSS-Simulator,6,1.236589497,Review,MaSS-Simulator has insufficient recent applications,MaSS-Simulator,Yes,MaSS-Simulator is published in a peer review journal,No,No applications have been listed for MaSS-Simulator,No,"4 citations with 2 likely applications for MaSS-Simulator. One application from 2021, one from 2019",NO,"accessibility: ok
+documentation: ok
+application: no, only 2 applications in 2019 and 2021
+support: ok, last update in 2020","Agree. BP
+
+HSC- agree
+
+MR - agree",
+12/19/2008,mbs,28,1.91242515,Review,"MR: No because the GSR application tab is not populated (fixable)
+LM:  Not enough pubs?",mbs,Yes,"mbs was published in peer-reviewed journal, BMC Bioinformatics.
+The publication described the simulation method and applications clearly.
+",No,"No example publication using mbs has been provided in the “Applications” tab of the GSR entry of the simulator.
+",Yes,"mbs is used and cited by at least 5 external users in the past 5 years.
+",NO,"Although it is lack of the evidences of response to user inquiries and support for users can't be found, mbs is a well-maintained package and has the potential to be fully certified if the authors respond to our request to add sample applications and information of license.
+","MR: No to accessibility (license missing); Yes to Documentation (although the file is  in the download folder); Maybe to Application (if Bo is willing to add the 5 papers to the GSR App tab); No to Support (no evidence of support, nor instruction on how to get support). 
+BO: I added all recent applications but there are 5 in the past six years, three in the past five years, so it is not qualify anyway.
+LM:  I would say Yes to documentation and No to the rest.  Question about them saying ""License = No""  - to discuss.",
+1/1/2007,Mendel's Accountant,0,NA,X,"MR: No because lacks citations.
+BO: It is not in PMC and I cannot check citation. Maybe authors know.
+LM:  No.",Mendel's Accountant,Yes,"Mendel's Accountant was published in peer-reviewed journal, Scalable Computing: Practice and Experience.
+The publication described the simulation method and applications clearly.
+",No,"No example publication using Mendel's Accountant has been provided in the “Applications” tab of the GSR entry of the simulator.
+",No,"Mendel's Accountant is not used and cited by at least 5 external users in the past 5 years.
+",NO,"Although it is lack of the evidences of response to user inquiries and support for users can't be found, Mendel's Accountant is a well-maintained package and has the potential to be fully certified if the authors respond to our request to add sample applications and more citations.
+","MR: Yes to Accessibility and Documentation. No to Applications (there aren't enough citations on PubMed); No to Support (no evidence). 
+BO: Agree but perhaps no also to accessibility because I cannot find license info.
+LM:  Yes to Accessibility and Documentation.  No to applications and support.  I did check the facebook page and there's nothing there.",
+11/22/2019,metaSPARSim,9,2.426144756,Review,"MR: No because lacks citations.
+Bo: There is only one citation from PMC. 
+HSC:  The paper is cited by 8 
+
+ https://scholar.google.com/scholar_lookup?hl=en&volume=15&publication_year=2015&pages=1153-1162&journal=Molecular+Ecology+Resources&author=M.+Andrello&author=S.+Manel&title=MetaPopGen%3A+an+R+package+to+simulate+population+genetics+in+large+size+metapopulations",MetaPopGen,Yes,"MetaPopGen was published in peer-reviewed journal, Mol Ecol Resour.
+The publication described the simulation method and applications clearly.
+",No,"No example publication using MetaPopGen has been provided in the “Applications” tab of the GSR entry of the simulator.
+",No,"MetaPopGen is not used and cited by at least 5 external users in the past 5 years.
+",NO,"There is a lack of license and application, but documentation is decent for MetaPopGen. I would suggest documentation and support.
+","MR: Yes to Accessibility and Documentation; No to Applications (it wasn't cited enough); Maybe to Support (there is a github issue tracker but nobody asked questions).
+
+HSC:  Accessibility: Yes
+          Documentation: Yes
+          Application:  Yes
+          Support: Maybe
+",
+11/16/2020,MichiGAN,5,1.836016097,Review,MimicrEE2 has no application listed under GSR.,MimicrEE2,Yes,MimicrEE2 is published in peer-review journals,No,MimicrEE2 has no application listed under GSR.,Yes,MimicrEE2 has been cited 17 times.,NO,MimicrEE2 is accessible and has very good documentation. There is no ticket for MimicrEE2.,"Accessibility: yes
+Documentation: yes (very good)
+Application: 17 citations (no -> yes by adding citations)
+Support: yes (no ticket)
+
+HSC-  Not sure about ""Application"".  Yes to all other
+
+MR: Yes to Accessibility; Yes to Documentation; Maybe to Application; Yes to Support. ",
+2/3/2019,Minnow,8,1.77399757,Review,Minnow does not have enough citations.,Minnow,No,Minnow has been published in a peer-review journal,No,No applications are listed under Minnow's GSR entry,No,Minnow does not have enough citations.,NO,"Minnow is a well-maintained new GitHub package. 
+
+Accessibility: no, lack license
+Documentation: yes
+Application: no, needs adding citation to GSR
+Support: yes","Bo: I agree with the initial review.
+
+HSC: agree
+
+MR: agree w mtg discussion",
+3/2/2007,mlcoalsim,20,1.216261246,Review,"MR: Maybe (if we populate the GSR App tab).
+BO: 20 citations, let us check if the authors can update it.
+",mlcoalsim,Yes,"mlcoalsim was published in peer-reviewed journal, Evol Bioinform Online.
+The publication described the simulation method and applications clearly.
+",No,"No example publication using mlcoalsim has been provided in the “Applications” tab of the GSR entry of the simulator.
+",Yes,"mlcoalsim is used and cited by at least 5 external users in the past 5 years.
+",NO,"BO: mlcoasim seems to be left unmaintained but it has good documentation and its source code is still available. Yes to accessibility and documentation, no to application and support.
+","MR: Yes to Accessibility and Documentation; Maybe to Applications (there are citations we could add to the GSR App Tab); No to Support (the google issue tracker isn't working).  Question: isn't the Google code archive sun-setting?
+
+HSC:   Accessibility: Yes
+           Documentation: Yes
+           Application: Maybe
+           Support: No",
+9/30/2021,MOSim,0,NA,New,MOSim is too new to be cited.,MOSim,No,MOSim is currently published on bioRxiv,No,No citations are listed under MOSim,No,MOSim is too new to be cited (not published now),NO,New bioconductor package,"Accessibility: yes
+Documentation: yes
+Application: too new
+Support: no 
+
+HSC-
+Accessibility:  Yes
+Documentation:  Yes
+Application:  No
+Support: Maybe -- there is a link to support guide for R Bioconductor
+
+MR: Yes to Accessibility; Yes to Documentation; No to Application (too new); No to Support (question in issue tracker without response).",
+6/11/2008,msnsam,70,4.616079494,Review,There is no references for msnsam,msnsam,No,msnsam was not published separately,No,No applications of msnsam was listed under GSR,Yes,msnsam has 60+ citations but very few could have used this tool,NO,Old and rarely used extension for ms,"Accessibility: no license
+Documentation: ok
+Application: no
+Support: no
+
+HSC: 
+Accessibility: License
+Documentation: Yes
+Application: no
+Support: Yes -- https://github.com/rossibarra/msnsam/issues
+
+MR: No to Accessibility (lacks license); Yes to Documentation; No to Application; No to support (no answers to issue).
+",
+3/19/2020,Mutation-Simulator,7,2.067152104,Review,There are no citations and no applications for Mutation-Simulator,Mutation-Simulator,Yes,Mutation-Simulator was published in a  peer reviewed journal,No,No applications have been listed for Mutation-Simulator,No,There are no citations or applications for Mutation-Simulator,NO,"accessibility: ok
+documentation: ok
+application: no applications or citations
+support: ok","Agreed. BP
+
+HSC- agree 
+
+MR: agree",
+2/26/2007,MySSP,14,0.850815851,X,"MySSP has been cited but does not seem to be used because the citations are mostly from other simulators.
+LM - I didn't find 5 publications in the past 5 years.  Maybe we need to get them to update the application tab.
+MR: the answer to 3.3) is confusing, ""Yes"" is selected but then the comment states ""MySSP is not used and cited by at least 5 external users in the past 5 years"", it should be ""No"". ",MySSP,Yes,"MySSP was published in peer-reviewed journal, Evol Bioinform Online.
+The publication described the simulation method and applications clearly.
+",No,"No example publication using MySSP has been provided in the “Applications” tab of the GSR entry of the simulator.
+",Yes,"MySSP is not used and cited by at least 5 external users in the past 5 years.
+",NO,"For MySSP, it is lack of the evidences of response to user inquiries and information of license. Also, there are just a few citations. Also, there is no instruction on how to use MySSP. I would suggest that we contact the author and check if he is still maintaining it. 
+","MySSP might still be supported by the author but it is not well documented and has not bee used. Its github website is created for host the source code but never updated. We can contact the author and see if he is still backing it.
+
+LM - No to accessibility, application, and support.  Can we discuss documentation?  It's a little thin, but there.
+
+MR: Yes to Documentation. No to accessibility: missing source code and license. No to Applications: there are not enough applications if any, we can ask the author to provide them if they exist.No to Support: the issue tracker on Github is not in use, ask author to use it? I suspect nobody is asking anything because the package is not in use.",
+12/3/2015,nanosim,85,11.06455064,Review,No applications listed by NanoSim ,NanoSIm,Yes,NanoSim was published in peer-review journal,No,Applications of NanoSim is not listed ,Yes,NanoSim has 42 citations ,NO,Good open source package,"Accessibility: yes
+documentation: yes
+citation: usual no, 42 citations so far
+support yes
+
+HSC-
+Accessibility: yes
+Documentation: yes
+Application: Need to add to GSR
+Support: yes
+
+MR: Yes to all",
+1/1/2016,NEAT,33,4.340540541,Review,There is currently no citation for NEAT (from PMC) and no evidence of applications,NEAT,Yes,NEAT has been published in a peer-reviewed journal.,No,NEAT has not been cited in the past year according to PMC.,No,No list of applications of NEAT is currently available.,NO,"NEAT is a new package under active development (according to issue tracker). It could be awarded with accessibility, support, and documentation if the author could confirm the GSR entry. Applications of NEAT need more time to appear though.","MR - Yes to accessibility, documentation and support. No to application. 
+The software was recently (2016) published so am not surprised about the lack of applications. 
+I have a question regarding the license which states ""Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed."" Is it ok not to allow for changes?
+
+
+HSC-  Agree that except Application, the software meets the other three certificate criteria under the condition that the author responds and confirms the GSR entry.   The software is relatively new and is on GitHub, and seems to be very easy to use.  ",
+10/4/2013,NeSSM,31,3.148302727,Review,NeSSM has no citation listed under GSR.,NeSSM,Yes,NeSSM is published in peer-reviewed journal.,No,NeSSM has no citation listed on GSR,Yes,NeSSM has been cited 25 times accodding to BMC.,NO,NeSSM does not provide clear license information and no evidence of support. Otherwise it is a decent simulator,"Accessibility: no license
+documentation: decent
+application: usual no
+support: no evidence of support.
+
+
+HSC-
+HSC-  Seem Sketchy in ""Details"" Tab
+
+Accessibility: No
+Documentation: OK
+Application: No
+Support: no
+
+MR: No to Accessibility (lacks license); Yes to Documentation; No to Application (but possible); No to Support.",
+2/1/2010,NetRecodon,38,2.810536981,X,"LM - agree.
+BO - Agree, There are not many direct applications for NetRecodon in its 32 citations, not enough for me to step in to add applications. :-)",NetRecodon,Yes,"NetRecodon was published in peer-reviewed journal, Genetics.
+The publication described the simulation method and applications clearly.
+",No,"No example publication using NetRecodon has been provided in the “Applications” tab of the GSR entry of the simulator.
+",Yes,"NetRecodon is used and cited by at least 5 external users in the past 5 years.
+",NO,"NetRecodon has not been maintained for a while and is likely already abandoned.
+","LM - Accessibility - Yes; Documentation - Yes (I would give this one); Application (no, need to update GSR); Support - No - no evidence of support.
+
+MR: Yes to Accessibility and Documentation. No to Application and Support.",
+3/5/2018,NPBSS,15,2.763755679,Review,No citation listed for NPBSS,NPBSS,Yes,NPBSS is published in peer-reviewed journal,No,No citations have been listed for NPBSS ,Yes,NPBSS appears to have been used (10 times according to pubmed central),NO,NPBSS is developed by a Chinese group so communication could have been a problem. The program is decent but no support. ,"Accessibility: no license, only copyright info, meaning it is proprietary
+Documentation: barely enough
+Application: appears to have some but not listed
+Support: no response to a ticket
+
+HSC-
+Accessibility: Not sure
+Documentation: No
+Application: No
+Support: No
+
+MR: No to all
+",
+4/18/2018,OmicsSIMLA,11,2.072792979,Review,Lacks applications listed under OmicsSIMLA's application tab,OmicsSIMLA,Yes,OmicsSIMLA is published in peer-review journal,No,No applications listed,Yes,OmicsSIMLA has been cited four times in 2020,NO,Good package hosted on sourceforge.,"Accessibility: no license
+Documentation: good
+Application: no application listed
+Support: no evidence of support
+
+HSC-
+Accessibility: No license, maybe
+Documentation:  Yes
+Application: Not yet
+Support: Maybe
+
+MR: No to Accessibility (no license); Yes to Documentation; No to Application; No to Support (no issue tracker).
+",
+1/7/2015,PARA-suite,6,0.698787492,X,PARA-suite lacks citations on gsr tab,PARA-suite,Yes,PARA-suite is published in peered reviewed journal,No,Citations of PARA-suite is not listed,Yes,There are some recent citations for PARA-suite ,NO,PARA-suite is a decent github based package that could be fully certified.,"Accessibility: yes
+documentation: yes
+application: usual no
+support: yes (but no evidence of support)
+
+
+HSC- 
+Yes to  Accessibility and Documentation
+Application: No.  
+support: Maybe
+
+MR: Yes to Accessibility, Documentation and Support (although nobody is asking questions). No but possible to Application.",
+6/21/2019,PaSS,9,2.178381963,Review,PaSS is note cited enough and not listed on GSR.,PaSS,Yes,PaSS is published on peer-review journal,No,No application is listed on applications for PaSS,No,PaSS has not been cited often (4 in the past 5 years),NO,"PaSS is hosted on a Chinese university site, without license or support","Accessibility: no license (source coce is available)
+Documentation: ok
+Application: no
+Support: no
+
+HSC:
+ Documentation: Maybe
+No to all others
+
+MR: No to Accessibility (no license); Yes to Documentation; No to Application (not enough citations); No to Support (no tracker).
+",
+5/5/2021,PBSIM2,25,11.07402913,Review,PBSIM2 is too new,PBSIM2,Yes,PBSIM2 has been published in peer-review journal,No,No citation for PBSIM2 is listed on GSR,Yes,PBSIM2 is too new to have any citation,NO,decent and recent package,"Accessibility: yes
+Documentation: yes
+Application: no
+Support: yes
+
+HSC-
+Yes to all except Application
+
+MR: Yes to Accessibility; Yes to Documentation; No to Application (not enough citations); Yes to Support.",
+10/10/2009,PEDAGOG,6,0.433749257,X,PEDAGOG has not bee used and cited well. The latest two citations are from other new simulators.,PEDAGOG,Yes,"PEDAGOG was published in peer-reviewed journal, Mol Ecol Resour.
+The publication described the simulation method and applications clearly.
+",No,"No example publication using PEDAGOG has been provided in the “Applications” tab of the GSR entry of the simulator.
+",No,"PEDAGOG is not used and cited by at least 5 external users in the past 5 years.
+",NO,"PEDAGOG was once off-line after the reorganization of the departmental website. I contacted the author and he put it back on. However, it is a 12 year old package that has not seen much use, and I am afraid that the authors will not improve it anymore.","Bo: Yes for documentation and no for all others.
+
+MR: 
+Accessibility: No, because no license and can't check if code runs.
+Documentation: Yes, although not through direct link from website.
+Application: No, not enough papers (max 6 of which 2 in past 5 years).
+Support: No, lacking proof of support.
+
+LM - agree.  Just ""Yes"" to documentation.
+
+",
+7/25/2020,pg-gan,16,5.270758123,Review,pg-gan has just been published.,pg-gan,Yes,pg-gan is now published in Molecular Ecology Resources,No,pg-gan is too new,No,pg-gan is too new,NO,"This ia a new package that has just been published,","Accessibility: lack of license
+documentation: good
+application: just got published, too new
+support: one ticket not answered, no
+
+HSC- Documentation: Yes.  All others: No.
+
+MR: No to Accessibility (no license); Yes to Documentation; No to Application (no citations); No to Support (no response).",
+12/9/2019,PGsim,0,0,X,PGsim is quite new,PGSim,Yes,PGsim is submitted as a ,Yes,,No,PGSim is too new to be cited,NO,"PGsim is a decent package on github, but its author is in china and we cannot reach him/her.","Accessibility: yes
+Documentation: yes
+Application: too new
+Support: yes
+
+MR: yes to all but application",
+6/29/2011,phenosim,8,0.66033469,X,"phenosim has not beed used and cited by the community (its citations are from other simulators), but perhaps its authors knows some other citations other than PMC.
+
+LM - agree.",phenosim,Yes,"phenosim was published in peer-reviewed journal, BMC Bioinformatics.
+The publication described the simulation method and applications clearly.
+",No,"No example publication using phenosim has been provided in the “Applications” tab of the GSR entry of the simulator.
+",No,"phenosim is not used and cited by at least 5 external users in the past 5 years, or twice in the past year.
+",NO,"For phenosim, there is a lot of missing informations and it would take a lot of work to get it to certified. Also, there are just a few citations and the homepage of phenosim is no longer valid.
+","The homepage of phenosim has been moved but could be found (accessibility), its documentation is decent but hidden (possible documentation). The software is not widely used and there is no sign of support (no application and support)
+
+MR:
+- Accessibility: Maybe? if ""open source"" is enough for license.
+- Documentation: Maybe? if embedded in zip file is ok
+- Application: No
+- Support: No 
+
+LM
+-Accessibility (lean towards Y)
+-Documentation (lean towards Y)
+-Application, Support - No",
+4/6/2017,PhenotypeSimulator,13,2.050561798,Review,No citations listed for PhenotypeSimulator,PhenotypeSimulator,Yes,PhenotypeSimulator has been published,No,No citations are listed for PhenotypeSimulator,No,"PhenotypeSimulator has been cited four times according to PMC, but maybe ok.",NO,"PhenotypeSimulator is a decent R package, but with unclear license and few citations.","Accessibility: need to clarify license
+Documentation: yes
+Application: usual no
+Support yes
+
+MR: Yes to Documentation and Support. No to Accessibility (incomplete license). No to Application.
+
+HSC: 
+Accessibility:  there is a ""Changed LICENSE file and DESCRIPTION as response to CRAN requests"" 
+Documentation: yes
+Application: no
+Support yes",
+12/12/2013,phylodyn,25,2.588652482,Review,Phylodyn does not have a sufficient application.,Phylodyn,Yes,Phylodyn is published in a peer-reviewed journal.,No,No citations are listed under the applications tab of Phylodyn’s GSR entry.,No,Phylodyn does not have enough citations.,NO,"Accessibility: yes
+Documentation: yes
+Application: no, has been cited 18 times since 2018, just most likely not using its simulation feature.
+Support: yes","Agree. Note that this package only has a small coalescent simulation component and can hardly be called a simulator. Bo
+
+HSC- should it be included in GSR?
+
+MR: Yes to all but Application
+
+Update: The license of the package is not explicitly declared, so no accessibility.",
+4/19/2011,PhyloSim,25,2.030937013,Review,"No example applications of PhyloSim has been listed, although the package has been cited 17 times according to PMC.
+
+LM - do we want to fill this one in?",PhyloSim,Yes,"PhyloSim was published in peer-reviewed journal, BMC Bioinformatics.
+The publication described the simulation method and applications clearly.
+",No,"No example publication using PhyloSim has been provided in the “Applications” tab of the GSR entry of the simulator.
+",Yes,"PhyloSim is used and cited by at least 5 external users in the past 5 years.
+",NO,"PhyloSim is a well-maintained package and has the potential to be fully certified if the authors respond to our request to add sample applications.
+","It is obvious that the development of PhyloSim has ceased but perhaps we could still get author's cooperation to add applications since they have updated their package with GSR tile three years ago. Suggested certificates: accessibility, documentation, and support.
+
+MR
+- Accessibility: Yes
+- Documentation: Yes
+- Application: Maybe? can we add the citations?
+- Support: Yes
+
+LM
+-Agree with Accessibility and documentation -- not totally clear on why you all say ""yes"" to support.  Do we want to ask them to add applications?",
+5/7/2014,piBUSS,16,1.728321989,Review,piBUSS was not cited frequently enough,piBUSS,Yes,piBUSS was published in 2016,No,There is no listed application for piBUSS,No,piBUSS was not cited frequently enough,NO,"Accessibility: no, not on github, no source code, no license.
+Documentation: Yes
+Application: No. published in 2016, cited by 16 articles, 31720009 (2019), 33102246 (2020) , 35538057 (2022), added
+Support: No, no issue tracker or evidence of support
+",,
+6/1/2012,pIRS,85,7.596718903,Review,"The authors of pIRS would need to add citations to GSR entry.
+
+LM - agree
+MR - No to Application, until some examples are added to GSR",pIRS,Yes,"pIRS was published in peer-reviewed journal, Bioinformatics.
+The publication described the simulation method and applications clearly.
+",No,"No example publication using pIRS has been provided in the “Applications” tab of the GSR entry of the simulator.
+",Yes,"pIRS is used and cited by at least 5 external users in the past 5 years.
+",NO,"pIRS is a well-maintained package and has the potential to be fully certified if the authors respond to our request to add sample applications.
+","LM - I would give this Ac, Doc, and Support.  Applications with an update of the application tab.
+
+MR - Yes to Accessibility, Documentation and Support. No to Applications. Ask author to add examples of Application to GSR tab. I would expect this author to be responsive to our request.",
+2/8/2019,POWSC,7,1.556977453,Review,Polyester has been cited but lacks applications listed at GSR.,Polyester,Yes,Polyester is published in peer reviewed journals.,No,No application for Polyester has been listed at GSR.,Yes,Polyester has been cited 71 times,NO,Polyester is a typical R package that is widely used. ,"Accessibility: yes
+Documentation: yes
+Application: the usual no (but could add citations given the number of citations)
+Support: no
+
+HSC-  Lack of content in ""Details"" Tab
+
+Accessibility: yes
+Documentation: Yes
+Application: No
+Support: No
+
+MR: Yes to Accessibility and Documentation. No to Application (but could be a yes if someone adds some PMids to the gsr applications tab ) and No to Support.",
+4/16/2017,powsimR,66,10.45572917,Review,POWSC does not have a sufficient application.,POWSC,Yes,POWSC is published in a peer-reviewed journal.,No,No citations are listed under the applications tab of POWSC’s GSR entry.”,Yes,POWSC has been cited 3 times since 2021.,NO,"Accessibility: yes
+Documentation: yes
+Application: no
+Support: yes","Agree with the initial review. 
+
+MR: Yes to Accessibility. Yes to Documentation. Maybe to Applications (3 citations in 2021-22). Yes to Support (although some more recent questions have not been answered).
+
+HSC-  Agree  with MR.
+
+NOTE: we checked the five citations and only one of them is an actual application.",
+4/7/2016,PReFerSim,6,0.817774459,X,PReFerSim does not have enough citations.,PReFerSim,Yes,PReFerSim is cited in a peer-reviewed journal.,No,PReFerSim does not have enough citations.,No,PReFerSim does not have enough citations.,NO,"PReFerSim is a well-maintained new GitHub package.
+
+Accessibility: no
+Documentation: yes
+Application: no
+Support: no",,
+3/12/2013,ProteinEvolver,23,2.209210526,Review,ProtenEvolver was not frequently used.,ProtenEvolver,Yes,ProtenEvolver was published in 2013,No,No publication is listed for ProtenEvolver on GSR,No,ProtenEvolver was not frequently cited (only one application),NO,"Accessibility: yes, on google doc, GPL3 on homepage, has source code
+Documentation: No, there is a readme on github, and inside downloaded package
+Application: No. published in 2013, cited by 23 articles, 36463317 (2023) only, 
+Support: No, 8 years ago, no question asked.
+",MR: Accessibility,
+5/11/2018,pSBVB,4,0.762800418,Review,,,,,,,,,,,,
+4/18/2018,pWGBSSimla,2,0.376871451,X,pWGBSSimla is too new to be cited,pWGBSSimla,Yes,pWGBSSimla is published on peer-review journal,No,No listed application for pWGBSSimla,No,pWGBSSimla is just published (2020),NO,Decent new simulator published on sourceforge,"The same as OmicsSIMLA
+
+Accessibility: no license
+Documentation: shared with OmicsSIMLA ok.
+Application: too new to have citation
+Support: no evidence of support (shared with OmicsSIMLA)
+
+
+HSC-
+Accessibility: No license, maybe
+Documentation:  Yes
+Application: Not yet
+Support: Maybe
+
+MR: No to Accessibility (no license); Yes to Documentation; No to Application (too early); No to Support (no issue tracker).
+",
+3/19/2016,Pysim-sv,6,0.812013348,X,"No applications listed for Pysim-sv, also likely not enough applications",Pysim-sv,Yes,Pysim-sv is published in a peer-review journal.,No,No applications has been listed on GSR for Pysim-sv,No,"There are 5 total citations, 2 likely applications for Pysim-sv ",NO,"Accessibility: no license
+documentation: ok
+application: not listed, 2 possible application
+support: no response since 2018","HSC:  
+
+Accessibility: no 
+documentation: Yes
+application: maybe
+support: No
+
+MR: Yes to Documentation. No to accessibility (no license), to Application (only 1 potential), to Support (no replies) ",
+10/10/2014,Pyvolve,44,4.982935154,Review,No citations of PyVolve is listed under GSR,PyVolve,Yes,Yes PyVolve is published (citation in documentation),No,No applications of PyVolve is listed under GSR,Yes,PyVolve is cited 31 times according to PMC,NO,PyVolve is hosted on github and well maintained.,"Accessibility: yes
+Documentation: yes
+Applications: the usual no
+Support: yes
+
+HSC: Need to update ""Attribute""
+
+MR: Yes to Accessibility, Documentation and Support. Applications could be granted if  2-5 citations are added to the GSR tab. ",
+7/1/2008,quantiNEMO,35,2.316409791,Review,"The applications tab of quantiNEMO is lacking but should be easy to fix (if the authors are still maintaining the package).
+
+",quantiNEMO,Yes,"quantiNEMO was published in peer-reviewed journal, Bioinformatics.
+The publication described the simulation method and applications clearly.
+",No,"No example publication using quantiNEMO has been provided in the “Applications” tab of the GSR entry of the simulator.
+",Yes,"quantiNEMO is used and cited by at least 5 external users in the past 5 years.
+",NO,"Although it is lack of the evidences of response to user inquiries and support for users can be found, quantiNEMO is a well-maintained package and has the potential to be fully certified if the authors respond to our request to add sample applications.
+",HSC -- I agree with the initial reviewers' overall comments.   ,
+11/6/2012,readsim,0,NA,X,,,,,,,,,,,,
+2/21/2012,RECOAL,1,0.087216249,X,"The authors could potentially find more citations for RECOAL but right now there is no evidence of wide application.
+
+LM - agree.",RECOAL,Yes,RECOAL is published in a peer-review article.,No,Publications of RECOAL is not listed at GSR.,No,RECOAL was cited only once in 2014 according to PMC.,NO,"BO: RECOAL was moved from google code to github but is likely abandoned. Suggests accessibility and documentation, in doubt with  support.","HSC:   accessibility: Yes
+            documentation: Yes
+            application: No
+            support:  No
+
+LM - I agree with HSC/Bo.  There's  no easy way to contact and doesn't look like the ticket tracker is active.
+            ",
+11/20/2007,Recodon,31,1.971597839,Review,"Recodon has been used with 28 citations, but no sample applications has been listed on GSR.
+
+HSC:  The original paper has 50 citations now, but I can not tell how many of them really use the software.
+
+LM - it doesn't look like 5 groups used this in the past 5 years based on my review.  I would say we ask the authors to fill this in.",Recodon,Yes,"Recodon was published in peer-reviewed journal, BMC Bioinformatics.
+The publication described the simulation method and applications clearly.
+",No,"No example publication using Recodon has been provided in the “Applications” tab of the GSR entry of the simulator.
+",Yes,"Recodon is used and cited by at least 5 external users in the past 5 years.
+",NO,"Recodon is still accessible, with decent documentation, but it is obviously no longer maintained.
+","Bo: suggest accessibility, documentation (need to discuss criteria later), no application and support (need to finalize criteria).
+
+HSC: 
+ accessibility: Yes
+ documentation: Yes
+ application:  Need to add to GSR 
+ support: No
+
+LM - Yes to acc and doc; No to App and Support",
+9/30/2020,REGENS,0,NA,X,REGENS is new and has not been cited.,REGENS,Yes,REGENS is published.,No,REGENS has just been published with no citation.,No,REGENS has just been published with no citation.,NO,REGENS is a typical new generation simulator hosted on github. It is well documented and supported but we need time to see if it will be used.,"REGENS: (Bo)
+Accessibility yes
+documentation yes
+application no
+support yes
+
+MR: Yes to Accessibility, Documentation and Support. No to Application (because it's a brand new software, should modify this part from standard letter when sending certificates)
+
+HSC:  Application: No. Yes for all others. ",
+9/3/2019,ReSeq,5,1.272663877,X,ReSeq has only 2 likely applications,ReSeq,Yes,ReSeq is published in a peer reviewed journal ,No,No applications have been listed for ReSeq on GSR,No,ReSeq has only 2 likely application citations,NO,"accessibility: ok
+documentation: ok
+application: only 2/5 likely applications
+support: ok","Agree with the evaluation
+
+HSC: Agree 
+
+MR: Yes to all (2 applications in the past year).
+
+Bo: Re 2 publications. One of them does not use the simulator.",
+8/1/2011,REvolver,7,0.582137161,X,REvolver was not well cited,REvolver,Yes,REvolver was published,No,No application of REvolver was listed on GSR,No,REvolver was cited 7 times over more than 10 years,NO,"Accessibility: yes, on github, GPL license
+Documentation: yes
+Application: No. published in 2012, cited 7 times
+Support: No, no ticket asked since 2016
+","MR: Accessibility, Documentation",
+8/30/2011,rlsim,12,1.004587156,X,"No application is listed for rlsim.
+
+LM - agree",rlsim,Yes,"rlsim was published in peer-reviewed journal, arXiv preprint arXiv.
+The publication described the simulation method and applications clearly.
+",No,"No example publication using rlsim has been provided in the “Applications” tab of the GSR entry of the simulator.
+",No,"Citations for rlsim is not available from PMC and we have to wait for its author to update the application list.
+",NO,"rlsim is a well-maintained package and has the potential to be fully certified if the authors respond to our request to add sample applications.
+","Bo: rlsim is decently packaged and developed but there does not seem to be widely used and the author has not responded to any request since 2015. Yes to accessibility, documentation, no to application and support.
+
+HSC:  There are 12 citations so far. Some of them use rlsim to generate data for verify their methodology. 
+          Accessibility: Yes
+          Documentation: Yes
+          Application:  Maybe- Need to add to the GSR website tab. 
+          Support:No
+
+LM - I would say Yes to Acc, Doc, and Support.  There is evidence of inquiries...even if it isn't recent.",
+8/9/2004,Rmetasim,36,1.894190572,Review,"The GSR entry of Rmetasim needs to be updated with applications.
+LM - agree.",Rmetasim,Yes,"Rmetasim was published in peer-reviewed journal, Molecular Ecology Notes. The publication described the simulation method and applications clearly. (https://onlinelibrary.wiley.com/doi/abs/10.1046/j.1471-8286.2002.00208.x)
+",No,"No example publication using Rmetasim has been provided in the “Applications” tab of the GSR entry of the simulator.
+",Yes,"Rmetasim is used and cited by at least 5 external users in the past 5 years.
+",NO,"Although it is lack of the evidences of response to user inquiries and support for users can be found, Rmetasim is a well-maintained package and has the potential to be fully certified if the authors respond to our request to update GSR entry and provide information on support.
+","HSC- Overall agree with the initial reviewer.  One note:  Rmetasim is an interface of Metasim.  The two packages, however,  shows many different attributes when compared.  
+LM - Ac+; Doc - need to update GSR entry, Ap - need update GSR entry; Supp - need evidence of support.
+ ",
+8/1/2011,RNA Seq Simulator,0,NA,X,"I cannot seem to find any information on citation for useq.
+
+LM - Ditto.",RNA Seq Simulator,No,"The overall package useq was published, not the rna seq simulator part.",No,There is no typical application for useq,No,useq rna simulator was not cited.,NO,"RNASeq simulator is a small portion of useq, which is a large meta package that does not seem to be under active maintenance.","This is a hard one to certify.
+
+Accessibility: No, but could be fixed if the authors add download link to homepage.
+Documentation: No. Difficult to find, but could be sufficient for this small piece of tool.
+Application: No since the simulator is not published, however the parent package has been published.  https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2628906/ has been cited more than 100 times though.
+Support: There has been support but not active.
+
+MR: am not impressed ... still:
+Accessibility: Yes, I downloaded directly from here: http://useq.sourceforge.net/ 
+Documentation: Yes, minimal but what else is needed for a simple java script?
+Application: No. 
+Support: Unclear, nobody asking questions is not the developer's fault. 
+
+LM - I had alot of trouble with finding anything from this one and I'm not sure that the license info is there.  
+Though I found this new link:  https://github.com/HuntsmanCancerInstitute/USeq/blob/master/README.md
+
+We agreed after the discussion and review of the github page:  Y accessible, Y, document, N app, Y support
+
+
+",
+1/1/1998,Rose,97,3.787036047,Review,ROSE has been cited 87 times according to PubMed central. The moderator will add citations if the author is no longer maintaining the package.,Rose,Yes,"Rose was published in peer-reviewed journal, Bioinformatics.
+The publication described the simulation method and applications clearly.
+",No,"No example publication using Rose has been provided in the “Applications” tab of the GSR entry of the simulator.
+",Yes,"Rose is used and cited by at least 5 external users in the past 5 years.
+",NO,Rose is an old package and still being used. It is available as source code and web service. ,"Bo:
+
+Accessibility: yes
+Documentation: Insufficient.
+Application: No, but moderator will add citation if authors do not respond.
+Support: No.
+
+Huann-Sheng:  The website of the package seems to be well maintained. 
+
+Accessibility: yes
+Documentation: No
+Application: No
+Support: No.  
+
+LM - OK for accessiblility, no for rest.  I struggled with finding information for this package and couldn't find the manual.",
+4/25/2013,RSVSim,36,3.498402556,Review,RSVSim is very new (published in 2021),RSVSim,Yes,RSVSim is published in peer-reviewed journals,No,No citations of RSVSim has been listed under GSR,No,RSVSim is too new to has many citations.,NO,RSVSim is a standard bioconductor package.,"RSVSim is a new bioconductor package. Accessibility and documentation are good, no citation yet, and no evidence of support.
+
+HSC: Accessibility: Yes
+          Documentation: Yes 
+          Application: No  
+          Support: No
+
+           GSR attribute tab is blank
+
+MR: Yes to Accessibility and Documentation. No to Support. No to Application but letter should acknowledge that's due to software being too new. ",
+5/1/2015,santa-sim,13,1.571192053,Review,,,,,,,,,,,,
+9/28/2018,scDesign,21,4.320744081,Review,scDesign does not have a sufficient application.,scDesign,Yes,scDesign is published in a peer-reviewed journal.,No,No citations are listed under the applications tab of scDesign’s GSR entry,Yes,scDesign has been cited 21 times since 2021.,NO,"Accessibility: yes
+Documentation: yes
+Application: no
+Support: yes","Agreed.
+
+HSC-   Seems there are some applications 
+
+MR: Yes to all, not sure to Application (16 citations)",
+3/22/2021,SCSilicon,0,0,New,SCSilicon is very new and has not been used yet.,SCSilicon,Yes,SCSilicon is published in a peer-review journal,No,Applications of SCSilicon is not added to GSR,No,SCSilicon is very new and has no citation,NO,SCSilicon is a new package that needs time to be used.,"Accessibility: yes
+Documentation: yes
+Application: too new
+Support: yes 
+
+HSC- agree 
+
+MR - agree",
+1/22/2019,SCSIM,1,0.220144753,X,SCSIM has insufficient applications,SCSIM,Yes,SCSIM is published in a peer-reviewed journal,No,No applications for SCSIM have been listed in GSR ,No,SCSIM has 0 external user citations,NO,"Accessibility: ok
+documentation: ok
+application: no applications listed
+support: ok","HSC: Agree with the initial review
+
+MR: Yes to Accessibility and Documentation. No to Application (no relevant citations). Unclear for Support (one open 2019 issue).",
+5/23/2019,SECNVs,3,0.712426805,X,SECNVs has no likely application citations,SECNVs,Yes,SECNVs is published in a peer reviewed journal,No,No applications have been listed for SECNVs,No,SECNVs has no likely application citations ,NO,"accessibility: ok
+documentation: ok
+applications: no application citations
+support: no evidence of response from authors since publication","Agree.
+
+HSC: agree too
+
+MR: Yes to Acc and Doc; No to App and Supp.",
+2/25/2016,SELECTOR,3,0.402573529,X,SELECTOR does not have a decent application.,SELECTOR,Yes,SELECTOR is published in a peer-reviewed journal.,No,No citations are listed under the applications tab of SELECTOR’s GSR entry.,Yes,SELECTOR has been cited eight times since 2017.,NO,"Accessibility: no (missing installation instructions)
+Documentation: yes
+Application: no
+Support: no (no issue tracker is available)","Accessibility: no (missing installation instructions, no source code)
+Documentation: yes
+Application: no
+Support: no (no issue tracker is available)
+
+MR: Yes to Documentation only",
+7/10/2009,SelSim,41,2.910912274,Review,SelSim got quite a number of citations (>50 in PMC) but no application is listed.,SelSim,Yes,"SelSim was published in peer-reviewed journal, Bioinformatics.
+The publication described the simulation method and applications clearly.
+",No,"No example publication using SelSim has been provided in the “Applications” tab of the GSR entry of the simulator.
+",Yes,"SelSim is used and cited by at least 5 external users in the past 5 years.
+LM - I didn't see that many.
+",NO,"The old spencer SelSim is nowhere to be found. This new SelSim lacks license and documentation, and application for the usual reasons, the author is still around and might fix it to get is fully certified.","BO (3/29/2020): Accessibility: no license, easy fix.
+Documentation: no barely enough, could be improved a bit.
+Application: no
+Support: surprised to see it is still supported, yes for support.
+
+
+HSC (3/26/2020): 
+Accessibility: Yes
+Documentation: Yes
+Application: Can be yes if information is added to the GSR website. 
+Support: Yes
+
+LM (4/30/2020) - No Accessibility; No to Documentation (is this really enough?); No to application (I didn't see 5 in the past 5); Not sure about Support.
+
+MR (4/15/2021): No to Accessibility because lacks license information; Yes to Documentation (although some concrete examples could be added); Yes to Application if the citations are added to GSR; Yes to Support.",
+7/6/2018,SELVa,2,0.392895587,X,SELVa has not been cited yet,SELVa,Yes,SELVa is published,No,SELVa has not citation yet.,No,SELVa is very new,NO,SELVa is new and decent package,"Accessibility: yes
+documentation: yes
+applicaiton: too new
+support: yes (no issue)
+
+HSC-
+No to Application and Support. Yes to others.  No Attribute/Details in GSR
+
+MR: Yes to Accessibility, Documentation and Support (no issues reported but has tracker); No to Application (too new)
+",
+1/20/2018,SeqNet,4,0.720987654,Review,SeqNet is very new and does not have many applications,SeqNet,Yes,SeqNet is published in a peer-reviewed journal,No,No application for SeqNet is listed under GSR,No,SeqNet has been cited only once.,NO,"Accessibility: yes
+documentation: yes
+Application: no (too new)
+Support: yes (no ticket)",HSC: agree with the initial review,
+12/13/2013,SeqSIMLA,23,2.382236095,Review,SeqSIMLA has been used often in the past two years but there is no sample application in GSR.,SeqSIMLA,Yes,"SeqSIMLA was published in peer-reviewed journal, Genet Epidemiol and BMC Bioinformatics.
+The publication described the simulation method and applications clearly.
+",No,"No example publication using SeqSIMLA has been provided in the “Applications” tab of the GSR entry of the simulator.
+",Yes,"SeqSIMLA is used and cited by at least 5 external users in the past 5 years.
+",NO,"Although it is lack of the evidences of response to user inquiries and support for users can be found, SeqSIMLA is a well-maintained package and has the potential to be fully certified (except perhaps support) if the authors respond to our request to add sample applications and information of license.","HSC-  For Support
+
+(1) The author has constantly updated the packages, recorded on change log (http://seqsimla.sourceforge.net/log.html).  It seems  author is  actively maintaining the simulator.  
+
+(2) Because a contact info is provided as well,  can it be deemed as  ""actively addressing users’ questions, bug reports and feature requests""?
+
+MR - No to accessibility because license is missing. Yes to documentation. Yes to Applications if we add to the Applications tab. No to support because there is no documentation of support.
+",
+7/17/2019,SERGIO,18,4.433198381,Review,SERGIO does not have a sufficient application.,SERGIO,Yes,SERGIO is published in a peer-reviewed journal.,No,No citations are listed under the applications tab of SERGIO's GSR entry.,Yes,SERGIO has been cited 19 times in the past year.,NO,"Accessibility: yes
+Documentation: yes
+Application: no
+Support: yes","Yes, typical new package.
+
+HSC: NO application. Yes to others
+          Need to fill in ""Details"" tab in the GSR website
+
+MR : ok",
+7/5/2006,Serial NetEvolve,4,0.233899391,X,Serial NetEvolve was note well cited,Serial NetEvolve,Yes,Serial NetEvolve was published in 2006,No,No application for Serial NetEvolve was listed on GSR,No,Serial NetEvolve was only cited 4 times in the past 10+ years,NO,"Accessibility: Yes, on user website, with source code and license
+Documentation: Yes, good documentation on homepage
+Application: No. 
+Support: No
+","MR: Accessibility, Documentation",
+1/9/2017,SIApopr,6,0.91211995,X,,SFS_CODE,Yes,The primary citation for SFS_CODE (Bioinformatics 2008) describes the program.,No,"The applications entry of GSR is empty, although the author lists citations to the SFS_CODE paper on its website. These papers cited but might have not used SFS_CODE.",No,SFS_CODE has been widely used but this fact is not reflected at the GSR website.,NO,"SFS_CODE is easy to install, well-documented, and widely used, but need some work to meet the criteria of the GSR certification program. 
+
+**
+RDH:
+Accessibility:  The license is adequately listed on project page, and should be approved.  
+
+Application:  2) The documentation has many examples of use (indicated by “Ex. ##”, with there currently being 29 example commands in the documentation), including an Examples section that is very limited, but includes the pertinent example of recurrent hitchhiking.  It is not clear that more examples of use are necessary, as most people come to simulation with a problem they need to solve rather than an open-minded desire to learn biology.  3) I agree, this needs to be updated.  
+
+Support:  3) Unacceptable to not respond to comments on GSR website.
+
+***
+
+
+HSC:
+Accessibility:  agree with RDH;
+
+Documentation: 1) Bo says ""SFS_CODE does not have most recent update information on GSR because because there is no visible change"", does this mean no update is required?
+
+Application:  2)   tend to agree with RDH
+                     3)  the citations need update.  
+
+Support:  3)  Agree with Bo.  Needs timely response to visitors. 
+
+***","LM comments:
+
+Accessibility: 
+2) – I think this should be considered passing.  Overall should pass accessibility.
+Documentation
+2) I agree with Ryan.  I think the documentation is very complete.  – I would say that this should be considered certified for documentation.
+Application:
+While Ryan notes many applications are provided in the documentation, the way this criteria is worded it focuses on the GSR entry.  
+2) Agree with Bo – the applications are not in GSR and would need to be updated
+3) Agree with Bo – the citations are not in GSR and would need to be updated.
+Support:
+3) Makes sense – would not pass support.  
+
+Bo comments:
+I agree with others that the license information and documentation of SFS_CODE are good enough to be certified. We can award these two certificates and await Dr. Hernandez to update SFS_CODE's GSR entry to award the other two certificates.",Certify for Accessibility and Documentation; Application and Support needs information from developer. (10/20/15)
+2/21/2006,SIBSIM,0,NA,X,"Bo: there is no sign of citation for sibsim.
+
+HSC: There is one that I found.  ""Mapping for dyslexia and related cognitive trait loci provides strong evidence for further risk genes on chromosome 6p21"" by Inke R. König et al.  (2010). ",SIBSIM,Yes,"SIBSIM was published in peer-reviewed journal, GMS Med Inform Biom Epidemiol.
+The publication described the simulation method and applications clearly.
+",No,"No example publication using SIBSIM has been provided in the “Applications” tab of the GSR entry of the simulator.
+",No,"SIBSIM is not used and cited by at least 5 external users in the past 5 years, or twice in the past year.
+",NO,"SIBSIM is an old package and it is not updated for so long. Also, There are just a few citations for SIBSIM. There is a lot of work to get it to certified","Bo: sibsim has been abandoned but it is source code is still available and could potentially be reused.
+
+HSC:  
+  Accessibility: Yes
+  No to all others
+
+MR: 
+Accessibility: Yes.
+Documentation: Maybe
+Application: No
+Support: No",
+8/29/2012,SimAdapt,29,2.649561952,Review,There is no evidence of applications for SimAdapt.,SimAdapt,Yes,"SimAdapt was published in peer-reviewed journal, Methods in Ecology and Evolution.
+The publication described the simulation method and applications clearly.
+",No,"No example publication using SimAdapt has been provided in the “Applications” tab of the GSR entry of the simulator.
+",Yes,I cannot find a list of citations for SimAdapt since it is not published in one of the PMC archived journals.,NO,"SimAdapt was published in 2013 with decent documentation but there was no evidence of application or support.
+","Bo: There is no evidence of support but the package is still available. Yes to accessibility and documentation, no to application and support.
+
+HSC: There are many applications in molecular ecology. But they are not listed in GSR website.
+
+accessibility: Yes
+documentation: Yes
+application: Maybe
+support - NO
+
+MR: Yes to Accessibility and Documentation. No to Application (no citations) and Support (no evidence or platform).
+",
+3/14/2015,SimBA,1,0.118970013,X,SinBA has an insufficient application.,SimBA,Yes,SimBA is published in a peer-reviewed journal.,No,No citations are listed under the applications tab of SimBA’s GSR entry.,No,SimBA has been cited once in the past five years.,NO,"Accessibility: no (No installation instructions given in the repository.)
+Documentation: no (SimBA has insufficient documentation.)
+Application: no (SimBa has an insufficient application)
+Support: yes","Accessibility: yes
+Documentation: no (SimBA has insufficient documentation.)
+Application: no (SimBa has an insufficient application)
+Support: no (no evidence of support)
+
+MR: Yes only to Accessibility.",
+9/11/2018,SimBit,3,0.611390285,X,Simbit does not have a sufficient application.,Simbit,Yes,Simbit is published in a peer-reviewed journal.,No,No citations are listed under the applications tab of Simbit's GSR entry.,Yes,Simbit has been cited 3 times in the past 2 years.,NO,"Accessibility: yes
+Documentation: yes
+Application: non (too new)
+Support: yes (empty issue tracker)","Agreed. Bo
+
+MR: Yes to all but Application",
+10/26/2012,SimCopy,0,NA,X,The article that introduced simCopy has been cited by 36 articles from PMC (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3990475/citedby/) so it is likely that simCopy has been used by others. The authors would need to identify applications and fill the applications tab to be certified for application.,SimCopy,Yes,"SimCopy was published in peer-reviewed journal, PLoS Comput Biol.
+The publication described the simulation method and applications clearly.
+",No,"No example publication using SimCopy has been provided in the “Applications” tab of the GSR entry of the simulator.
+",Yes,"SimCopy is used and cited by at least 5 external users in the past 5 years.
+",NO,SimCopy has the potential to be certified for documentation and applications if the authors respond to our request. The package itself has not been updated for quite a while so I suspect it has been abandoned.,"HSC:  Accessibility: Yes
+           Documentation: Yes
+           Application:  No
+           Support:   There are some updates from the author.  Can be a ""Yes"" 
+
+MR: 
+Accessibility: Yes.
+Documentation: Yes.
+Application:  No; it has potential since there are 53 Scopus and 36 PMC citations (weird the paper is not on PubMed); ask author to identify and upload the 5 applications. 
+Support: No; nobody asked questions through GitHub either; it looks like the software has not been maintained in the past 6 years.
+
+",
+1/1/2005,SIMLA,30,1.612190813,Review,SIMLA has been cited 29 times but it is unclear is they are applications and how many are within 2/5 years. No applications listed at GSR.,SIMLA,Yes,"SIMLA was published in peer-reviewed journal, Stat Appl Genet Mol Biol.
+The publication described the simulation method and applications clearly.
+",No,"No example publication using SIMLA has been provided in the “Applications” tab of the GSR entry of the simulator.
+",No,"SIMLA is not used and cited by at least 5 external users in the past 5 years, or twice in the past year.
+",NO,"It is lack of the evidences of response to user inquiries, information of license, simple application, citations and source code. There is a lot of work to get SIMLA to certified
+","
+
+HSC:  My review is incomplete because this software needs registration in order to download.  
+
+Accessibility:  No
+Documentation:  N/A
+Application:  Maybe 
+Support:  No
+
+MR: No to all criteria.
+",
+6/15/2016,SimLoRD,34,4.756611729,Review,SimLoRD needs applications listed to be certified for aplicaitons.,SimLoRD,Yes,SimLoRD is published in peer-reviewed journals,No,SimLoRD does not have applications listed under GSR,Yes,SimLoRD has been cited more than 23 times according to PMC,NO,SimLoRD is a decent open source package.,"Accessibility: yes
+documentation: yes
+application: lack list of applicaitons
+support: yes
+
+MR: Yes to Accessibility, Documentation, and Support. No to Application but potentially yes if add 2-5 of the available citations.
+
+HSC:  
+Accessibility: yes
+documentation: No -- lacking details in GSR website
+application: No
+support: yes",
+1/26/2010,simNGS,0,NA,X,simNGS was not published,simNGS,No,simNGS is not published,No,simNGS has no application list,No,simNGS was note cited.,NO,simNGS was not published and has been depectaed since 2013.,"Accessibility: yes
+documentation: yes
+application: no
+support: no
+
+HSC-  GSR website has no ""details"" attribute;
+
+Accessibility: yes
+documentation:  ??  (Bo: the man page is pretty detailed)
+application: no
+support: no
+
+MR: Yes to Accessibility and Documentation.",
+1/1/2005,SimPed,25,1.343492344,X,"HSC- There are at least 5 citations for the original paper.  Not sure if these citations use the software as application. 
+BO: The citations for simPed are not enough, only one in the past 2 years and 3 in the past five years.",SimPed,Yes,"SimPed was published in peer-reviewed journal, Hum Hered.
+The publication described the simulation method and applications clearly.
+",No,"No example publication using SimPed has been provided in the “Applications” tab of the GSR entry of the simulator.
+",No,"SimPed is not used and cited by at least 5 external users in the past 5 years, or twice in the past year.
+",NO,"Although it is lack of the evidences of response to user inquiries and support for users can be found, SimPed is a well-maintained package and has the potential to be fully certified if the authors respond to our request to add sample applications and information of license.
+","HSC- 
+
+Accessibility:  Yes
+Documentation: Yes
+Application: Need to add information to the GSR 
+Support: Yes
+
+BO:
+
+Support: No because there is only one outdated email address (Dr. Leal has moved to Columbia).
+
+MR:
+Accessibility:  Yes
+Documentation: Yes
+Application: No 
+Support: No",
+12/8/2017,SimPEL,0,NA,X,No citations for simPEL has been listed under GSR,simPEL,Yes,simPEL is published in peer-review journal,No,No application is listed under simPEL's GSL entry,No,simPEL is not in PMC center so no citations are listed,NO,"simPEL has been published five years ago and has no evidence of support.
+
+Accessibility: no (no license)
+Documentation: good
+Applications: no (not PMC listed, no way to trace citations)
+Support: no (no ticket and no evidence of support in the past 7 years)","HSC: Yes to Documentation; No to all others
+MR:ok",
+9/27/2005,Simprot,21,1.175072819,X,simprot is not used now,simprot,Yes,simprot is published in a peer-reviewed journal,No,No applicaiton is listed for simprot,No,simprot has not been cited as applications recently,NO,simprot has been abandoned since 2005,"accessibility: no license and no source code
+documentation: not enough
+application: not cited
+support: no evidence of support
+
+HSC- No to all
+
+MR: none",
+11/24/2010,SimSeq,0,NA,X,SimSeq was not published,SimSeq,No,SimSeq was not published,No,SimSeq was not published,No,SimSeq was not published,NO,SimSeq has depcated,"accssibility: yes
+documentation: borderline
+application: not published
+support: stopped after 2014
+
+HSC- agree.  Sparse details in GSR
+
+MR: A",
+5/22/2019,simuG,13,3.085175553,Review,simuG lacks applications listed,simuG,Yes,simuG is published on peer-review journal,Yes,simuG does not have applicaitons listed,Yes,simuG has been cited a number of times in 5 years,NO,Good github-based package,"Accessibility: yes
+documentation: yes
+application: need citation
+support yes
+
+HSC-
+
+Application: NO
+Support: Maybe
+Yes to others
+
+MR: Yes to Accessibility; Yes to Documentation; No to Application (not enough citations); Yes to Support.",
+9/1/2010,simuGWAS,16,1.236502223,X,,simuGWAS,Yes,"simuGWAS was published in peer-reviewed journal, BMC Bioinformatics.
+The publication described the simulation method and applications clearly.
+",Yes,"There is an example publication using simuGWAS has been provided in the “Applications” tab of the GSR entry of the simulator.
+",No,"simuGWAS is not used and cited by at least 5 external users in the past 5 years, or twice in the past year.
+",NO," simuGWAS is a well-maintained package and has the potential to be fully certified if the authors respond to our request to add more citations.
+","MR: Yes to Accessibility, Documentation and Support; No to Application (not enough citations). 
+LM - Agree with Melissa.  I am a little confused as to whether we consider this distinct from simupop.
+HSC:  Agree.  Yes to all except Application. ",
+11/17/2012,simuRare,7,0.652618135,X,simuRare was not widely used.,simuRare,Yes,simuRare was published,No,There is no citation list for simuRare,No,simuRare was not cited after 2020,NO,"Accessibility: no, on author homapge, no license
+Documentation: No, very brief documentation
+Application: No. 
+Support: No.
+",,
+7/11/2018,SimuSCoP,5,0.984889369,X,SimuSCoP is too new.,SimuSCoP,Yes,SimuSCoP has been published in peer-reviewed journal,No,No application listed for SimuSCoP,No,SimuSCoP is too new to have many citations,NO,decent new open source package,"accessibility: yes
+documentation: yes
+application: too new
+support: yes
+
+Accessibility: Yes
+Documentation: Yes
+Application: Need to add to GSR
+Support: Yes
+
+MR: yes to all except application ",
+1/20/2014,SInC,25,2.61761331,Review,More evidence for applications of SInC is needed.,SInC,Yes,SInC is published in BMC Bioinformatics.,No,The applications tab of the GSR entry of SInC is currently empty.,No,SInC has been cited 10 times according to PMC but only one publication (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4938638/) explicitly states the use of SInC for simulation. The authors might know more publications that actually used SInC.,NO,"SInC is decently maintained and cited, and could be fully certified with improvements on documentation and applications.","HSC-  SlnC meets the criteria of ""Support"" and ""Accessibility"". 
+           ""Documentation""  seems OK to me.  
+            ""Application"" needs update. 
+
+MR- Agree with HSC",
+1/1/2006,SISSI,19,1.079041543,Review,Applications for SISSI is unknown.,SISSI,Yes,"SISSI was published in peer-reviewed journal, Bioinformatics.
+The publication described the simulation method and applications clearly.
+",No,"No example publication using SISSI has been provided in the “Applications” tab of the GSR entry of the simulator.
+",No,"SISSI has been cited recently with a total of about 20 citations since 2006. It is unclear if there is enough applications in the past 2 or 5 years.
+",NO,"SISSI is an old package that was well documented and is still available. The number of applications is unknown and there is no evidence of support. 
+","MR: Yes to Accessibility and Documentation. No to Application, but it's a potential less if authors identify the 2-5 applications out of the 20+ citations. No to Support.
+
+LM:  The contact link is broken, though there does seem to be an email address (not clear it works).  Will mention contact link and evidence of support.  Yes to Acc and Doc, no to App and Supp.",
+3/18/2015,skeleSim,2,0.238250653,X,skeleSim was not used and cited frequently,skeleSim,Yes,skeleSim was published in peer-review journal,No,skeleSim has no application list on GSR,No,skeleSim was not cited frequently,NO,"skeleSim is a standard R package that is well supported, but not cited freuqently","accessibility: yes
+documentation: yes
+application: no (two citations, none application)
+support: yes
+
+HSC- Agree
+MR: ok",
+1/22/2003,SNPsim,9,0.437883231,X,,SNPsim,Yes,"SNPsim was published in peer-reviewed journal, Bioinformatics.
+The publication described the simulation method and applications clearly.
+",No,"No example publication using SNPsim has been provided in the “Applications” tab of the GSR entry of the simulator.
+",No,"SNPsim is not used and cited by at least 5 external users in the past 5 years, or twice in the past year.
+",NO,"It is lack of the evidences of response to user inquiries and sample applications. Also, SNPsim is an old package and does not have many citations for years.","BP: SNPsim is deprecated but it is still accessible with decent documentation. Yes for accessibility, borderline for documentation, no for application and support.
+
+MR: Yes to Accessibility; Maybe to Documentation; No to Application and Support.
+
+HSC: Accessibility:  Yes 
+          Documentation:  Yes
+          Application:  No.   There are two recent publications that cited the original paper (one in 2016, one in 2019).
+          Support: No",
+7/13/2019,SPARSIM,11,3.201754386,Review,No application for SomatoSim is listed,SomatoSim,Yes,SomatoSim is published in peer review journal,No,No application is listed for SomatoSim on GSR,Yes,SomatoSim has been cited twice last year and has the potential to be certified.,NO,SomatoSim is a decent new package with good documentation and support.,"Accessibility: yes
+Documentation: yes
+Application: yes (2 recent citations added)
+Support: yes
+
+HSC-  Agree
+
+MR: Yes to all but Application.",
+7/3/2017,SpartaABC,4,0.655884996,X,SpartaABC has not been used and cited frequently,SpartaABC,Yes,SpartaABC is published in a peer-reviewed journal,No,There is no listed applications for SpartaABC,No,SpartaABC has not been cited frequently,NO,SpartaABC is a good web-based simulator that has not been used and cited widely,"Accessibility: yes
+Documentation: yes
+Application: no
+Support: no",
+5/12/2005,SPIP,26,1.424711004,Review,"MR - No to application, I couldn't find the publications describing the software (the citation on the website is non existing and the one in GSR is wrong as it refers to ""single-pass intestinal-perfusion (SPIP) method"" not a simulation method) nor other papers citing the software (the citations link is also wrong in GSR). 
+BO: The primary citation for SPIP has been updated on GSR.
+LM:  Agree - found this publication, but couldn't easity determine the citations.",SPIP,Yes,"SPIP was published in peer-reviewed journal, J Pharm Pharmacol.
+The publication described the simulation method and applications clearly.
+",No,"No example publication using SPIP has been provided in the “Applications” tab of the GSR entry of the simulator.
+",No,"SPIP is not used and cited by at least 5 external users in the past 5 years, or twice in the past year.
+",NO,"It is lack of the evidences of response to user inquiries and the information of license. Also, SPIP is an old package and does not have many citations.
+","MR - No to all 4 certificates. No to accessibility because the license could not be found; other accessibility aspects look ok; accessibility should be easy to fix. No to Documentation because it is not directly accessible from the homepage but only in the downloaded package; accessibility should be very easy to fix. No to application because there is no publication describing the software (the citation on the website is not findable and the one in GSR is wrong as it refers to ""single-pass intestinal-perfusion (SPIP)"", not a simulation method) nor other papers citing the software (the citations link is also wrong in GSR).  No to support, the only support provided is the author email address.
+LM - agree.",
+1/12/2004,Splatche,48,2.5795053,Review,"MR - No to Application because the GSR tab is not updated, otherwise it looks well cited.
+LM - agree.
+BP: so this could be easily addressed.",Splatche,Yes,"Splatche was published in peer-reviewed journal, Bioinformatics.
+The publication described the simulation method and applications clearly.
+",No,"No example publication using Splatche has been provided in the “Applications” tab of the GSR entry of the simulator.
+",Yes,"Splatche is used and cited by at least 5 external users in the past 5 years.
+",NO,"For Splatche, It is lack of the evidences of response to user inquiriesm information of license and souce code. If the authors want it to be fully certified, they need to provide these missing information and add some simple applications.
+","MR - No to Accessibility because of lack of license and source code (easy to fix). Yes to Documentation. No to Application because GSR tab is not updated (easy to fix). No to Support because there is no support tracking system (other than the FAQ page). 
+LM - Agree.  (let's discuss the support section)
+BP: agree.",
+9/12/2017,Splatter,272,46.06960557,Review,"Splatter does not have citations listed, but GSR moderator should consider adding them ",Splatter,Yes,Splatter was published in peer-reviewed journals,No,Splatter has no citation listed as GSR applications,Yes,Splatter has a lot of citations (131 according to GSR),NO,"Splatter is a well-documented and well-maintained bioconductor package, with a lot of citations.","Accessibility: yes
+Documentation: yes
+Applications: no but moderator can add citations if authors do not respond
+Support: yes
+
+HSC- No attribute details 
+
+MR: Yes to Accessibility, Documentation and Support. Applications could be granted if  2-5 citations are added to the GSR tab. ",
+2/7/2019,SPsimSeq,13,2.889768575,Review,SPsimSeq does not have a sufficient application.,SPsimSeq,Yes,SPsimSeq is published in a peer-reviewed journal.,No,No citations are listed are listed under the applications tab of SPsimSeq.,Yes,SPsimSeq has been cited 5 times since 2020.,NO,"Accessibility: yes
+Documentation: yes
+Application: no
+Support: yes","Agree with the initial review.
+
+MR: Yes to Accessibility (disagree with comment on top about license not being accessible).  Yes to Documentation. Maybe to Applications (5 citations in 2020-22). Yes to Support. 
+
+HSC- Agree with MR.  For Application, it needs to update ""Application"" page  in the GSR website.",
+2/4/2017,srv,14,2.151578947,X,"BP: srv is not used and cited well enough to be certified.
+LM:  The application tab would need to be updated I think.  I was only able to find ~3 publications in the past 5 years.  Maybe Bo can update?
+MR: No to application. We should still add the appropriate references to the application tab. ",srv,Yes,"srv was published in peer-reviewed journal, Hum Hered.
+The publication described the simulation method and applications clearly.
+",Yes,"There is an example publication using srv has been provided in the “Applications” tab of the GSR entry of the simulator.
+",No,"srv is not used and cited by at least 5 external users in the past 5 years, or twice in the past year.
+",NO,"srv is reasonably supported although it is not well cited to be certified for applications. (I suppose I should not review it due to COI?)
+","LM:  Should discuss COI, but I think I am OK.  I would give all except Application.  We could have a fourth reviewer.
+MR: Yes to Accessibility, Documentation and Support. No to application. We can have Huenn-Chen to review as well (although I don't particularly feel a need for it).  GSR edits needed: correct the link to the srv home page and add the available publications to the application tab.",
+9/29/2014,SVEngine,6,0.982503365,X,SVEngine does not have citations listed.,SVEngine,Yes,SVEngine is published.,No,SVEngine does not have citation listed.,Yes,SVEngine is relatively new but has been cited three times in 2020,NO,"Decent new simulator, reasonably well maintained.","Accessibility: yes
+documentation; yes
+application: no for the usual reason
+support: yes although the author did not respond to our request.
+
+
+HSC-  No to Applications and Yes to the other 
+
+MR (4/15/2021): Yes to Accessibility; Yes to Documentation; Yes to Application if the citations are added to GSR; Yes to Support.",
+7/17/2017,SymSim,45,7.476103778,Review,SymSim does not have a sufficient application.,SymSim,Yes,SymSim is published in a peer-reviewed journal.,No,No citations are listed under the applications tab of SymSim’s GSR entry.,Yes,SymSim has been cited 59 times since 2019.,NO,"Accessibility: yes
+Documentation: yes
+Application: no
+Support: yes","Agreed.
+
+HSC:  No Application. Yes to others. 
+           Lacking ""Details""
+
+MR: ok",
+3/5/2022,Synggen,0,0,New,synggen is too new to be cited/used,synggen,Yes,synggen is published in 2023,No,No list of applications for synggen is available on GSR,No,synggen is too new to be cited,NO,"Accessibility: yes, on gutbucket, with license
+Documentation: yes
+Application: Not yet (too new) 
+Support: No, Cannot access issue tracker
+",,
+3/11/2010,TreesimJ,8,0.603804797,X,,TreesimJ,Yes,"TreesimJ was published in peer-reviewed journal, Bioinformatics.
+The publication described the simulation method and applications clearly.
+",No,"No example publication using TreesimJ has been provided in the “Applications” tab of the GSR entry of the simulator.
+",No,"TreesimJ is not used and cited by at least 5 external users in the past 5 years, or twice in the past year.
+",NO,"there is a lot of work to get TreesimJ to certified due to a lot of missing information and invalid links at the homepage. Also, there are just a few citations. I would suggest that we contact the author and check if he is still maintaining it.
+
+
+HSC: 
+Accessibility: No - can access to the google code archive, but seems sketchy, not clear.
+Documentation: No. --  lacking 
+Application: No
+Support: No
+
+MR: Yes to Documentation; No to Accessibility, Application and Support
+",,
+1/2/2012,Variant Simulation Tools,4,0.464968153,X,,Variant Simulation Tools,Yes,"Variant Simulation Tools was published in peer-reviewed journal, Genet Epidemiol.
+The publication described the simulation method and applications clearly.
+",No,"No example publication using Variant Simulation Tools has been provided in the “Applications” tab of the GSR entry of the simulator.
+",No,"Variant Simulation Tools is not used and cited by at least 5 external users in the past 5 years, or twice in the past year.
+",NO," Variant Simulation Tools is a well-maintained package and has the potential to be fully certified if the authors respond to our request to add sample applications and citations.
+
+HSC: 
+Accessibility: Yes
+Documentation: Yes
+Application: Maybe. Need to fill in application tab
+Support: Maybe. 
+
+MR: Yes to Accessibility, Documentation and Support; No to Application
+",,
+2/5/2014,VirusTreeSimulator,0,NA,X,VirusTreeSimulator is not published,VirusTreeSimulator,No,VirusTreeSimulator was not published,No,VirusTreeSimulator has no application listed,No,VirusTreeSimulator was only cited by URL,NO,"Accessibility: yes, on github, GPL license
+Documentation: No
+Application: No. Was cited by URL (e.g. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5854118/) 
+Support: No, 1 ticket in 2017, not responded
+",MR: Accessibility.,
+3/14/2019,VISOR,13,2.952706907,Review,VISOR is new and not used by others yet.,VISOR,No,VISOR is not yet published (under review at bioinformatics),No,VISOR is not yet used.,Yes,VISOR is not yet cited.,NO,"VISOR is a ""modern"" simulator hosted on github with decent documentation. There is no evidence of support, yet, and we could suggest the authors to notify us once they are answered tickets?","HSC: 
+         Accessibility:Yes
+         Documentation: Yes
+         Application: No
+         Support:  Yes -- What if there is no one asking questions? 
+
+MR: Yes to Accessibility, Documentation and Support. No to Application.
+Reason for Yes to Support is that author encourage to open tickets on Github for questions - what else can he do?
+",
+12/7/2012,Wessim,15,1.453797132,Review,"Wessim has been cited 9 times according to PMC so it could be certified if there are five actual applications, provided that the authors can add the citations to GSR.",Wessim,Yes,"Wessim was published in peer-reviewed journal, Bioinformatics.
+The publication described the simulation method and applications clearly.
+",No,"No example publication using Wessim has been provided in the “Applications” tab of the GSR entry of the simulator.
+",Yes,"Wessim is used and cited by at least 5 external users in the past 5 years.
+",NO,"Wessim looks like another publish-and-forget tool because the author did not update the software or answer to users' questions on github according to github activities. Although the software is still available (albeit lack of license information) and is still being used (according to citation), it does not seem to be maintained.","HSC: Accessibility: No - no  source code
+          Documentation: Yes
+          Application: No - nothing shown in GSR 
+          Support: No -  no response to inquiries.
+          
+LM - Accessibility because of no license info.  I think the source code is available.
+Documentation - Yes
+Application - No (nothing in GSR)
+Support - No (not respond to issues in the tracker)
+",
+1/21/2011,WgSim,0,NA,X,wgsim is not cited,wgsim,No,wgsim is not published,No,wgsim is not cited,No,wgsim is not cited,NO,"wgsim is one of the oldest read simulator, and still in use due to its author Heng Li (author of SAM/BAM format). 
+
+Accessibility: no license
+documentation: brief but ok
+application: not published
+support: no","HSC- 
+
+Accessibility: No
+documentation: Yes
+application:  Not sure about this
+support: No [change to Yes because the community has been supporting the package]",
+2/15/2016,XomeBlender,0,NA,X,XomeBlender lacks listed applications,XomeBlender,Yes,XomeBlender is published in s peer-reviewed journal,No,No applicaiton of XomeBlender is listed,Yes,XomeBlender has been cited six times since 2018 and could be certified if they are real applications.,NO,XomeBlender is a typical new(ish) github-distributed open source package that has been reasonably cited.and could be fully certified.,"Accessibility: yes
+documentation: yes
+application: usual no
+support: yes
+
+HSC- No to Application, Yes to all others
+
+MR: Yes to Accessibility, Documentation (even if short), Support. No but possible to Application.",
+1/16/2014,XS,8,0.836676218,X,There is a lack of list of applications for XS.,XS,Yes,"XS was published in peer-reviewed journal, BMC Res Notes.
+The publication described the simulation method and applications clearly.
+",No,"No example publication using XS has been provided in the “Applications” tab of the GSR entry of the simulator.
+",No,"XS is not used and cited by at least 5 external users in the past 5 years, or twice in the past year.
+",NO,XS is a well-maintained package and has the potential to be fully certified if the authors respond to our request to add sample applications and citations.,"Bo: the only problem I see with XS is lack of citations, which the authors could fix.
+
+HSC: Yes to all except application.  
+
+LM:  Agree.  Though I found the documentation to be a little slim.",
+1/19/2018,Zombi,8,1.441263574,"Already certified, not updated in website",Zombi has a sufficient application.,Zombi,Yes,Zombi is published in a peer-reviewed journal.,No,No citations are listed under the applications tab of Zombi’s GSR entry.,Yes,Zombi has been cited 11 times in the past 2 years.,NO,"Accessibility: yes
+Documentation: yes
+Application: yes
+Support: no (there is an unaddressed issue in the issue tracker)","Accessibility: yes
+Documentation: yes
+Application: no
+Support: yes (the author has responded to most inquries)
+
+MR: Yes to all but Application (zero citations)",
