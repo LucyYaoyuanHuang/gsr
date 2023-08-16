@@ -1,5 +1,6 @@
 library(ggplot2)
 library(gghalves)
+library(RColorBrewer)
 
 source("data_collection.R")
 
@@ -12,6 +13,10 @@ prepare_data = function(path) {
   return(data)
 }
 gsrdata = prepare_data(data_path)
+ 
+brewer = brewer.pal(5, "YlGnBu")
+cols = c("0" = brewer[1], "1" = brewer[2], "2" = brewer[3], 
+         "3" = brewer[4], "4" = brewer[5])
 
 citations_over_time = function() {
   ggplot(data = gsrdata, mapping = aes(x= DateCreated, y = Citations)) +
@@ -44,29 +49,31 @@ citations_by_number_of_certifications = function() {
 certifcations_pre_and_post_gsr = function () {
   par(mfrow = c(1,2))
   gd = gsrdata$Checks[gsrdata$Year <= 2013]
-  pie(table(gsrdata$Checks), main = "Certificates of All Packages")
-  pie(table(gd), main = "Certificates of All Packages last updated\nbefore the creation of the GSR")
+  pie(table(gsrdata$Checks), main = "Certificates of All Packages", col = cols)
+  pie(table(gd), main = "Certificates of All Packages last updated\nbefore the creation of the GSR", col = cols)
   par(mfrow = c(1,1))
 }
 
-combined = function (with_pre, year, with_confidence) {
+combined = function (year, with_confidence) {
   yearlies = get_other_yearlies()
-  gdata = if (with_pre) gsrdata else subset(gsrdata,gsrdata$Year >= year)
-  per_year = if (with_pre) yearlies else subset(yearlies,gsrdata$Year >= year)
   colors = c("Support" = "#56B4E9", "Documentation" = "#D55E00", "Application" = "#E69F00", 
               "Accessability" = "#F5C710", "Domain Type" = "#0072B2","Average\nCitations" = "#009E73")
-   ggplot(data = gdata) +
+   ggplot(data = gsrdata) +
     geom_smooth(mapping = aes(x = DateCreated, y = Sup, color = "Support"),se = with_confidence, linewidth = 1.3) +
     geom_smooth(mapping = aes(x = DateCreated, y = Doc, color = "Documentation"),se = with_confidence, linewidth = 1.3) +
     geom_smooth(mapping = aes(x = DateCreated, y = App, color = "Application"),se = with_confidence, linewidth = 1.3) +
     geom_smooth(mapping = aes(x = DateCreated, y = Acc, color = "Accessability"),se = with_confidence, linewidth = 1.3) +
-    geom_smooth(mapping = aes(x = DateCreated, y = per_year$domain_type, color = "Domain Type"),
-                se = with_confidence, linewidth = 1.3) +
-    geom_smooth(mapping = aes(x = DateCreated, y = per_year$average_citation, color = "Average\nCitations"),
-                se = with_confidence, linewidth = 1.3) +
+    geom_smooth(mapping = aes(x = DateCreated, y = yearlies$domain_type, color = "Domain Type"),
+                se = with_confidence, linewidth = 1.3, linetype = 3) +
+    geom_smooth(mapping = aes(x = DateCreated, y = yearlies$average_citation, color = "Average\nCitations"),
+                se = with_confidence, linewidth = 1.3, linetype = 3) +
     labs(title = "Attributes of Packages Over Time", color = "Attribute") + xlab("Date Created") + ylab("Percent with attribute") +
-     scale_color_manual(values = colors)
+     scale_color_manual(values = colors) +
+     coord_cartesian(xlim = c(as.Date(paste(year,"/01/01", sep = "")),as.Date("2023/01/01"))) +
+     ylim(c(0,1))
 }
+# Ask Dr. Peng
+ggplot(data = gsrdata, mapping = aes(x = DateCreated, y = Sup)) + geom_point() + geom_smooth()
 
 average_citations_distribution = function() {
   ggplot(data = gsrdata, mapping = aes(y = AverageCitations)) +
@@ -122,6 +129,7 @@ lifespan_by_number_of_certifications = function() {
     annotate("text",x = 1, y = 4, label = "Median: 0.02465753") +
     annotate("text",x = 5, y = 14, label = "Median: 5.024658")
 }
+
 lifespan_over_time = function() {
   test = as.numeric(as.Date("2023-8-7"))/365.25
   m = -1/365
@@ -130,4 +138,10 @@ lifespan_over_time = function() {
     geom_smooth(method = "loess", formula = y~x) +
     geom_point() +
     labs(title = "Lifespan over Time", x = "Date Created", y = "Lifespan, years")
+}
+
+certificates_over_time_color = function() {
+  ggplot(data = gsrdata) +
+    geom_point(mapping = aes(x = DateCreated, color = Checks, y = AverageCitations)) + 
+    scale_y_log10()
 }
