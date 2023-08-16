@@ -35,7 +35,7 @@ certificates_over_time = function() {
 
 citations_by_number_of_certifications = function() {
   ggplot(data = gsrdata, mapping = aes(x = factor(Checks), y = Citations, group = Checks)) + 
-    geom_boxplot(ou) +
+    geom_half_boxplot(ou) +
     labs(x = "Number of Certifications", y = "Citations, logarithmic scale", title = "Citations by Number of Certifications") +
     scale_y_continuous(trans = "log10") +
     annotate("text", label = "ms", x = 3, y = 1400, size = 3.4) +
@@ -69,8 +69,7 @@ combined = function (year, with_confidence) {
                 se = with_confidence, linewidth = 1.3, linetype = 3) +
     labs(title = "Attributes of Packages Over Time", color = "Attribute") + xlab("Date Created") + ylab("Percent with attribute") +
      scale_color_manual(values = colors) +
-     coord_cartesian(xlim = c(as.Date(paste(year,"/01/01", sep = "")),as.Date("2023/01/01"))) +
-     ylim(c(0,1))
+     coord_cartesian(xlim = c(as.Date(paste(year,"/01/01", sep = "")),as.Date("2023/01/01")),ylim = c(0,1))
 }
 # Ask Dr. Peng
 ggplot(data = gsrdata, mapping = aes(x = DateCreated, y = Sup)) + geom_point() + geom_smooth()
@@ -80,6 +79,7 @@ average_citations_distribution = function() {
     geom_half_boxplot() +
     geom_half_dotplot() +
     scale_y_log10() +
+    annotate("text",x = -0.2, y = 6, label = "Median = 1.773998") +
     labs(title = "Average Citations per Year, Logarithmic Scale")
 }
 
@@ -103,14 +103,21 @@ lifepan_yearly = function() {
 }
 
 average_citations_by_number_of_certifications = function() {
-  ggplot(data = gsrdata, mapping = aes(x = factor(Checks), y = AverageCitations, group = Checks)) + 
-    geom_half_boxplot(outlier.shape = NA) +
-    geom_half_point() +
+  ggplot(data = gsrdata) + 
+    geom_half_boxplot(outlier.shape = NA,
+                      mapping = aes(x = factor(Checks), y = AverageCitations, group = Checks)) +
+    geom_half_point(mapping = aes(x = factor(Checks), y = AverageCitations, group = Checks)) +
     scale_y_log10() +
+    annotate("point", x = -1, y = 2, color = NA) +
+    geom_half_boxplot(mapping = aes(x = -0.4, y = AverageCitations), outlier.shape = NA, side = 0) +
+    geom_half_point(mapping = aes(x = -0.05, y = AverageCitations), side = 0) +
+    geom_half_violin(mapping = aes(x = -0.05, y = AverageCitations), side = 1) +
     labs(x = "Number of Certifications", y = "Average Citations, logarithmic scale", 
          title = "Average Citations by Number of Certifications") + 
     annotate("text",x = 1, y = 4, label = "Median: 1.405648") +
-    annotate("text",x = 5, y = 65, label = "Median: 3.840268")
+    annotate("text",x = 5, y = 65, label = "Median: 3.840268") +
+    annotate("text",x = -0.6, y = 65, label = "Median: 1.773998") +
+    coord_cartesian(xlim= c(-1,5))
 }
 
 average_citations_over_time = function() {
@@ -121,13 +128,21 @@ average_citations_over_time = function() {
 }
 
 lifespan_by_number_of_certifications = function() {
-  ggplot(data = gsrdata, mapping = aes(x = factor(Checks), y = Lifespan, group = Checks)) + 
-    geom_half_boxplot(outlier.shape = NA) +
-    geom_half_point() +
+  ggplot(data = gsrdata) + 
+    geom_half_boxplot(outlier.shape = NA,
+                      mapping = aes(x = factor(Checks), y = Lifespan, group = Checks)) +
+    geom_half_point(mapping = aes(x = factor(Checks), y = Lifespan, group = Checks)) +
         labs(x = "Number of Certifications", y = "Lifespan, years", 
          title = "Lifespan by Number of Certifications") + 
+    annotate("point", x = -0.6, y = 2, color = NA) +
+    geom_half_boxplot(mapping = aes(x = 0, y = Lifespan), outlier.shape = NA, side = 0) +
+    geom_half_point(mapping = aes(x = 0.35, y = Lifespan), side = 1) +
     annotate("text",x = 1, y = 4, label = "Median: 0.02465753") +
-    annotate("text",x = 5, y = 14, label = "Median: 5.024658")
+    annotate("text",x = 5, y = 14, label = "Median: 5.024658") +
+    annotate("text",x = 0, y = 15.6, label = "Median: 2.586301") +
+    annotate("text",label="Vortex, c. 1993", x = 4.3, y = 27) +
+    annotate("text",label="FastSlink, c. 1989", x = 3.3, y = 21) +
+    annotate("text",label="Bottlesim, c. 2003", x = 4.3, y = 16)
 }
 
 lifespan_over_time = function() {
