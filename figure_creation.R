@@ -57,19 +57,19 @@ certifcations_pre_and_post_gsr = function () {
 combined = function (year, with_confidence) {
   yearlies = get_other_yearlies()
   colors = c("Support" = "#56B4E9", "Documentation" = "#D55E00", "Application" = "#E69F00", 
-              "Accessability" = "#F5C710", "Domain Type" = "#0072B2","Average\nCitations" = "#009E73")
+              "Accessability" = "#F5C710", "Code\nRepository" = "#0072B2","Average\nCitations" = "#009E73")
    ggplot(data = gsrdata) +
-    geom_smooth(mapping = aes(x = DateCreated, y = Sup, color = "Support"),se = with_confidence, linewidth = 1.3) +
-    geom_smooth(mapping = aes(x = DateCreated, y = Doc, color = "Documentation"),se = with_confidence, linewidth = 1.3) +
-    geom_smooth(mapping = aes(x = DateCreated, y = App, color = "Application"),se = with_confidence, linewidth = 1.3) +
-    geom_smooth(mapping = aes(x = DateCreated, y = Acc, color = "Accessability"),se = with_confidence, linewidth = 1.3) +
-    geom_smooth(mapping = aes(x = DateCreated, y = yearlies$domain_type, color = "Domain Type"),
+    geom_smooth(mapping = aes(x = DateCreated, y = Sup*100, color = "Support"),se = with_confidence, linewidth = 1.3) +
+    geom_smooth(mapping = aes(x = DateCreated, y = Doc*100, color = "Documentation"),se = with_confidence, linewidth = 1.3) +
+    geom_smooth(mapping = aes(x = DateCreated, y = App*100, color = "Application"),se = with_confidence, linewidth = 1.3) +
+    geom_smooth(mapping = aes(x = DateCreated, y = Acc*100, color = "Accessability"),se = with_confidence, linewidth = 1.3) +
+    geom_smooth(mapping = aes(x = DateCreated, y = yearlies$domain_type*100, color = "Code\nRepository"),
                 se = with_confidence, linewidth = 1.3, linetype = 3) +
-    geom_smooth(mapping = aes(x = DateCreated, y = yearlies$average_citation, color = "Average\nCitations"),
+    geom_smooth(mapping = aes(x = DateCreated, y = yearlies$average_citation*100, color = "Average\nCitations"),
                 se = with_confidence, linewidth = 1.3, linetype = 3) +
     labs(title = "Attributes of Packages Over Time", color = "Attribute") + xlab("Date Created") + ylab("Percent with attribute") +
      scale_color_manual(values = colors) +
-     coord_cartesian(xlim = c(as.Date(paste(year,"/01/01", sep = "")),as.Date("2023/01/01")),ylim = c(0,1))
+     coord_cartesian(xlim = c(as.Date(paste(year,"/01/01", sep = "")), as.Date("2021-01-01")),ylim = c(0,100))
 }
 # Ask Dr. Peng
 ggplot(data = gsrdata, mapping = aes(x = DateCreated, y = Sup)) + geom_point() + geom_smooth()
@@ -121,7 +121,7 @@ average_citations_by_number_of_certifications = function() {
 }
 
 average_citations_over_time = function() {
-  ggplot(data = gsrdata, mapping = aes(x= DateCreated, y = test)) +
+  ggplot(data = gsrdata, mapping = aes(x= DateCreated, y = AverageCitations)) +
     geom_smooth(method = "loess", formula = y~x) +
     geom_point() + 
     labs(title = "Average Citations over Time", x = "Date Created", y = "Average Number of Citations")
@@ -157,6 +157,36 @@ lifespan_over_time = function() {
 
 certificates_over_time_color = function() {
   ggplot(data = gsrdata) +
-    geom_point(mapping = aes(x = DateCreated, color = Checks, y = AverageCitations)) + 
+    geom_smooth(mapping = aes(x = DateCreated, color = Domain.Type, y = Checks))
+}
+
+certificates_by_domain = function () {
+  ggplot(data = gsrdata, mapping = aes(x = Domain.Type, y = Checks)) +
+    geom_half_boxplot() +
+    geom_half_violin()
+}
+
+lifespan_by_domain = function () {
+  ggplot(data = gsrdata, mapping = aes(x = Domain.Type, y = Lifespan)) +
+    geom_half_boxplot() +
+    geom_half_violin(side = 1)
+}
+
+average_citations_by_domain = function () {
+  ggplot(data = gsrdata, mapping = aes(x = Domain.Type, y = AverageCitations)) +
+    geom_half_boxplot() +
+    geom_half_violin(side = 1) +
     scale_y_log10()
+}
+
+citations_by_domain = function() {
+  ggplot(data = gsrdata, mapping = aes(x = Domain.Type, y = Citations)) +
+    geom_half_boxplot() +
+    geom_half_violin(side = 1) +
+    scale_y_log10()
+}
+
+compare = function(daniel) {
+  ggplot(gsrdata) +
+    geom_smooth(mapping = aes(x = DateCreated, y = daniel, color = Domain.Type))
 }
