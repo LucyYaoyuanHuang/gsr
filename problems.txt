@@ -1,0 +1,13 @@
+>Not from a random sample of the population
+>Observational study
+	- can only conclude association
+>Not normally distributed
+
+Did public code repositories change support
+	>Proportion
+
+Did public code repositories change checks
+	>Ordinal-ish
+		-don't worry about it
+	>Not normal 
+		-use Wilcox
