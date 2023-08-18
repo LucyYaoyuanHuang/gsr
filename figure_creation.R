@@ -123,7 +123,7 @@ average_citations_by_number_of_certifications = function() {
 average_citations_over_time = function() {
   ggplot(data = gsrdata, mapping = aes(x= DateCreated, y = AverageCitations)) +
     geom_smooth(method = "loess", formula = y~x) +
-    geom_point() + 
+    geom_point() + scale_y_log10() +
     labs(title = "Average Citations over Time", x = "Date Created", y = "Average Number of Citations")
 }
 
@@ -187,6 +187,28 @@ citations_by_domain = function() {
 }
 
 compare = function(daniel) {
+  ggplot(gsrdata,mapping = aes(x = DateCreated, y = daniel, color = Domain.Type)) +
+    geom_smooth() + geom_jitter(height = 0.2)
+}
+
+compare_box = function(daniel) {
+  ggplot(gsrdata[gsrdata$Year > 2010,],mapping = aes(y = AverageCitations, color = Domain.Type)) +
+    geom_half_boxplot() + geom_half_point(side = 1) +
+    scale_y_log10()
+}
+
+compare_histo = function(daniel) {
   ggplot(gsrdata) +
-    geom_smooth(mapping = aes(x = DateCreated, y = daniel, color = Domain.Type))
+    geom_bar(mapping = aes(x = factor(Domain.Type), fill = factor(daniel)),
+             position = "stack")
+}
+
+prop_test = function(daniel) {
+  x1 = sum(daniel[gsrdata$Domain.Type == "Public Code Repository"])
+  x2 = sum(daniel[gsrdata$Domain.Type == "Personal or Institutional"])
+  n1 = length(daniel[gsrdata$Domain.Type == "Public Code Repository"])
+  n2 = length(daniel[gsrdata$Domain.Type == "Personal or Institutional"])
+  p1 = x1/n1
+  p2 = x2/n2
+  prop.test(x = c(x1,x2), n = c(n1,n2), p = c(p1,p2), correct = TRUE)
 }

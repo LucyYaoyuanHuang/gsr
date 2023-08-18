@@ -1,0 +1,15 @@
+appdata = read.csv("C:\\Users\\u251639\\Documents\\application.csv")
+appdata$Published = factor(appdata$Published)
+appdata$Examples = factor(appdata$Examples)
+appdata$Cited = factor(appdata$Cited)
+appdata$Overall = factor(appdata$Overall)
+nonapp = subset(appdata, appdata$Overall == "YES")
+
+library(readxl)
+checklist = read.csv("C:\\Users\\u251639\\Downloads\\Daniel.csv")
+no_app = subset(checklist,checklist$X3.4..OVERALL.CERTIFICATION.FOR.APPLICATION. == 0)
+write.csv(no_app,"~\\Daniel.csv")
+
+gsrdata = read.csv("C:\\Users\\u251639\\Downloads\\Dated GSR Data.csv")
+date_title = subset(gsrdata, gsrdata$App ==0, c(DateCreated,Title,Citations,AverageCitations))
+write.csv(date_title,"~\\Dates.csv")
